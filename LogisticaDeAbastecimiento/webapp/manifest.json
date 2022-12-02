@@ -1,0 +1,214 @@
+{
+    "_version": "1.8.0",
+    "sap.app": {
+        "_version": "1.3.0",
+        "id": "com.sap.build.standard.logisticaDeAbastecimiento",
+        "type": "application",
+        "i18n": "i18n/i18n.properties",
+        "applicationVersion": {
+            "version": "1.2.2"
+        },
+        "dataSources": {
+            "local": {
+                "uri": "/here/goes/your/serviceUrl/local/",
+                "type": "OData",
+                "settings": {
+                    "odataVersion": "2.0",
+                    "localUri": "localService/metadata.xml"
+                }
+            }
+        },
+        "title": "{{appTitle}}",
+        "description": "{{appDescription}}",
+        "ach": "ach",
+        "resources": "resources.json",
+        "sourceTemplate": {
+            "id": "ui5template.basicSAPUI5ApplicationProject",
+            "version": "1.32.0",
+            "toolsId": "49f51c32-612d-40fe-88dc-39e60e857712"
+        }
+    },
+    "sap.ui": {
+        "_version": "1.3.0",
+        "technology": "UI5",
+        "icons": {
+            "icon": "",
+            "favIcon": "",
+            "phone": "",
+            "phone@2": "",
+            "tablet": "",
+            "tablet@2": ""
+        },
+        "deviceTypes": {
+            "desktop": true,
+            "tablet": true,
+            "phone": true
+        }
+    },
+    "sap.ui5": {
+        "_version": "1.3.0",
+        "rootView": {
+            "viewName": "generated.app.view.Page7",
+            "type": "XML"
+        },
+        "dependencies": {
+            "minUI5Version": "1.50.0",
+            "libs": {
+                "sap.ui.core": {},
+                "sap.m": {},
+                "sap.ui.layout": {}
+            }
+        },
+        "contentDensities": {
+            "compact": true,
+            "cozy": true
+        },
+        "models": {
+            "i18n": {
+                "type": "sap.ui.model.resource.ResourceModel",
+                "uri": "i18n/i18n.properties"
+            },
+            "": {
+                "dataSource": "local",
+                "type": "sap.ui.model.odata.v2.ODataModel",
+                "settings": {
+                    "loadMetadataAsync": false,
+                    "json": true,
+                    "bJSON": true,
+                    "defaultBindingMode": "TwoWay",
+                    "defaultCountMode": "Inline",
+                    "useBatch": true,
+                    "refreshAfterChange": false,
+                    "disableHeadRequestForToken": true
+                }
+            }
+        },
+        "resources": {
+            "css": []
+        },
+        "routing": {
+            "config": {
+                "routerClass": "sap.m.routing.Router",
+                "viewType": "XML",
+                "viewPath": "com.sap.build.standard.logisticaDeAbastecimiento.view",
+                "controlId": "App",
+                "clearTarget": false,
+                "controlAggregation": "pages",
+                "bypassed": {
+                    "target": [
+                        "Principal"
+                    ]
+                }
+            },
+            "targets": {
+                "Principal": {
+                    "controlAggregation": "pages",
+                    "viewName": "Principal",
+                    "viewId": "Principal",
+                    "viewLevel": 1,
+                    "transition": "slide"
+                },
+                "Analisis": {
+                    "controlAggregation": "pages",
+                    "viewName": "Analisis",
+                    "viewId": "Analisis",
+                    "viewLevel": 4,
+                    "transition": "slide"
+                },
+                "InformacionTrayecto": {
+                    "controlAggregation": "pages",
+                    "viewName": "InformacionTrayecto",
+                    "viewId": "InformacionTrayecto",
+                    "viewLevel": 5,
+                    "transition": "slide"
+                },
+                "Legalizacion": {
+                    "controlAggregation": "pages",
+                    "viewName": "Legalizacion",
+                    "viewId": "Legalizacion",
+                    "viewLevel": 7,
+                    "transition": "slide"
+                },
+                "Conductores": {
+                    "controlAggregation": "pages",
+                    "viewName": "Conductores",
+                    "viewId": "Conductores",
+                    "viewLevel": 6,
+                    "transition": "slide"
+                },
+                "AnalysisKpi": {
+                    "controlAggregation": "pages",
+                    "viewName": "AnalysisKpi",
+                    "viewId": "AnalysisKpi",
+                    "viewLevel": 3,
+                    "transition": "slide"
+                },
+                "Page7": {
+                    "controlAggregation": "pages",
+                    "viewName": "Page7",
+                    "viewId": "Page7",
+                    "viewLevel": 2,
+                    "transition": "slide"
+                }
+            },
+            "routes": [
+                {
+                    "pattern": "Principal/:context:",
+                    "name": "Principal",
+                    "target": [
+                        "Principal"
+                    ]
+                },
+                {
+                    "pattern": "",
+                    "name": "default",
+                    "target": [
+                        "Principal"
+                    ]
+                },
+                {
+                    "pattern": "Analisis/:context:",
+                    "name": "Analisis",
+                    "target": [
+                        "Analisis"
+                    ]
+                },
+                {
+                    "pattern": "InformacionTrayecto/:context:",
+                    "name": "InformacionTrayecto",
+                    "target": [
+                        "InformacionTrayecto"
+                    ]
+                },
+                {
+                    "pattern": "Legalizacion/:context:",
+                    "name": "Legalizacion",
+                    "target": [
+                        "Legalizacion"
+                    ]
+                },
+                {
+                    "pattern": "Conductores/:context:",
+                    "name": "Conductores",
+                    "target": [
+                        "Conductores"
+                    ]
+                },
+                {
+                    "pattern": "AnalysisKpi/:context:",
+                    "name": "AnalysisKpi",
+                    "target": [
+                        "AnalysisKpi"
+                    ]
+                },
+                {
+                    "pattern": "Page7/:context:",
+                    "name": "Page7",
+                    "target": [
+                        "Page7"
+                    ]
+                }
+            ]
+        }
+    }
+}

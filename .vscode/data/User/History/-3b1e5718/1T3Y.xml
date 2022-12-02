@@ -1,0 +1,186 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.logisticaDeAbastecimiento.controller.AnalysisKpi" xmlns:f="sap.f" xmlns="sap.m" xmlns:layout="sap.ui.layout" xmlns:smartvariants="sap.ui.comp.smartvariants" xmlns:filterbar="sap.ui.comp.filterbar" xmlns:chart="sap.chart" xmlns:data="sap.chart.data">
+    <f:DynamicPage headerExpanded="true" showFooter="false" class="sapSmartTemplatesAnalyticalListPageDynamicPage sapUiSizeCompact" fitContent="true">
+        <f:title>
+            <f:DynamicPageTitle areaShrinkRatio="0:3:0.7" class="sapSmartTemplatesAnalyticalListPageDynamicPageTitle sapSmartTemplatesAnalyticalListPageDynamicPageTitleMargin">
+                <f:heading>
+                    <layout:VerticalLayout class="sapSmartTemplatesAnalyticalListPageFilterContainer">
+                        <layout:content>
+                            <layout:HorizontalLayout class="sapSmartTemplatesAnalyticalListPageAlignVariantTitle sapUIContentPadding">
+                                <layout:content>
+                                    <smartvariants:SmartVariantManagement showShare="true" showExecuteOnSelection="true"/>
+                                </layout:content>
+                            </layout:HorizontalLayout>
+                        </layout:content>
+                    </layout:VerticalLayout>
+                </f:heading>
+                <f:content>
+                    <OverflowToolbar class="sapSmartTemplatesAnalyticalListPageKpiTagContainer sapSmartTemplatesAnalyticalListPageKpiTagOverflow">
+                        <content/>
+                    </OverflowToolbar>
+                </f:content>
+                <f:actions>
+                    <ToolbarSpacer/>
+                    <OverflowToolbarButton icon="sap-icon://action" type="Transparent" tooltip="Share" visible="true" text="Share">
+                        <layoutData>
+                            <OverflowToolbarLayoutData closeOverflowOnInteraction="false" priority="High"/>
+                        </layoutData>
+                    </OverflowToolbarButton>
+                    <SegmentedButton selectedKey="{alpModel>/filterHeaderOption}" width="inherit" visible="true" selectionChange="_onFioriAnalyticalListPageHeaderActionsSelectionChange">
+                        <layoutData>
+                            <OverflowToolbarLayoutData priority="NeverOverflow"/>
+                        </layoutData>
+                        <items>
+                            <SegmentedButtonItem icon="sap-icon://filter-fields" tooltip="compact" key="compact" press="_onFioriAnalyticalListPageHeaderActionsPress"/>
+                            <SegmentedButtonItem icon="sap-icon://filter-analytics" tooltip="visual" key="visual" press="_onFioriAnalyticalListPageHeaderActionsPress1"/>
+                        </items>
+                    </SegmentedButton>
+                </f:actions>
+                <f:snappedContent>
+                    <Text class="sapSmartTemplatesAnalyticalListPageSnappedContentText"/>
+                </f:snappedContent>
+            </f:DynamicPageTitle>
+        </f:title>
+        <f:header>
+            <f:DynamicPageHeader pinnable="true" class="sapFDynamicPageHeaderContent">
+                <f:content>
+                    <filterbar:FilterBar visible="{= (${alpModel>/filterHeaderOption} === 'compact') }" useToolbar="false" showGoOnFB="true">
+                        <filterbar:filterGroupItems>
+                            <filterbar:filterGroupItems mandatory="false" label="Filter 1" name="Fiori_AnalyticalListPage_AnalyticalListPage_0-analyticalheader-Fiori_AnalyticalListPage_AnalyticalHeader-1-filterbars-Fiori_AnalyticalListPage_FilterBar-1-filters-Fiori_AnalyticalListPage_StandardFilter-1---0">
+                                <filterbar:control>
+                                    <MultiInput/>
+                                </filterbar:control>
+                            </filterbar:filterGroupItems>
+                        </filterbar:filterGroupItems>
+                    </filterbar:FilterBar>
+                    <HeaderContainer visible="{= (${alpModel>/filterHeaderOption} === 'visual') }">
+                        <content/>
+                    </HeaderContainer>
+                    <OverflowToolbar visible="{= (${alpModel>/filterHeaderOption} === 'visual') }" style="Clear" class="sapSmartTemplatesAnalyticalListPageVisualFilterToolbar">
+                        <content>
+                            <ToolbarSpacer/>
+                            <Button text="Adapt Filters" type="Transparent"/>
+                            <Button text="Go" tooltip="filter" type="Emphasized"/>
+                        </content>
+                    </OverflowToolbar>
+                </f:content>
+            </f:DynamicPageHeader>
+        </f:header>
+        <f:content>
+            <VBox class="sapSmartTemplatesAnalyticalListPageInheritHeight sapSmartTemplatesAnalyticalListPageMasterExtension">
+                <items>
+                    <OverflowToolbar style="Clear" class="sapSmartTemplatesAnalyticalListPageFilterableKPIContainer">
+                        <content>
+                            <Title text="KPIs" class="sapSmartTemplatesAnalyticalListPageFilterableKPITitle"/>
+                            <HBox>
+                                <items/>
+                            </HBox>
+                            <ToolbarSpacer/>
+                            <SegmentedButton selectedKey="{alpModel>/contentView}" width="inherit" visible="true" selectionChange="_onFioriAnalyticalListPageContentActionsSelectionChange">
+                                <items>
+                                    <SegmentedButtonItem tooltip="Chart and Table View" key="charttable" icon="sap-icon://chart-table-view" press="_onFioriAnalyticalListPageContentActionsPress"/>
+                                    <SegmentedButtonItem tooltip="Chart View" key="chart" icon="sap-icon://vertical-bar-chart-2" press="_onFioriAnalyticalListPageContentActionsPress1"/>
+                                    <SegmentedButtonItem tooltip="Table View" key="table" icon="sap-icon://table-view" press="_onFioriAnalyticalListPageContentActionsPress2"/>
+                                </items>
+                                <layoutData>
+                                    <OverflowToolbarLayoutData priority="NeverOverflow"/>
+                                </layoutData>
+                            </SegmentedButton>
+                        </content>
+                    </OverflowToolbar>
+                    <VBox fitContainer="true">
+                        <items>
+                            <VBox widht="90%" visible="{= (${alpModel>/contentView} === 'chart' || ${alpModel>/contentView} === 'charttable') }" class="sapSmartTemplatesAnalyticalListPageChartContainer">
+                                <items>
+                                    <VBox>
+                                        <items>
+                                            <OverflowToolbar design="Transparent" style="Clear">
+                                                <content>
+                                                    <Title textAlign="Begin" text="Sales Order Items"/>
+                                                    <ToolbarSpacer/>
+                                                    <OverflowToolbarButton type="Transparent" text="Toggle Legend Visibility" icon="sap-icon://legend" iconFirst="true" width="auto" press="_onFioriAnalyticalListPageChartContainerPress"/>
+                                                    <OverflowToolbarButton type="Transparent" text="Zoom In" icon="sap-icon://zoom-in" iconFirst="true" width="auto" press="_onFioriAnalyticalListPageChartContainerPress1"/>
+                                                    <OverflowToolbarButton type="Transparent" text="Zoom Out" icon="sap-icon://zoom-out" iconFirst="true" width="auto" press="_onFioriAnalyticalListPageChartContainerPress2"/>
+                                                    <OverflowToolbarButton text="Settings" type="Transparent" icon="sap-icon://action-settings" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                                                    <OverflowToolbarButton type="Transparent" text="Filter" icon="{path: 'alpModel>/exitFullscreenChart', formatter: '.formatFullscreenIconAnalyticalControl'}" iconFirst="true" width="auto" press="_onFioriAnalyticalListPageChartContainerPress3"/>
+                                                    <OverflowToolbarButton text="vertical-bar-chart" type="Transparent" icon="sap-icon://vertical-bar-chart" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                                                </content>
+                                            </OverflowToolbar>
+                                            <chart:Chart id="Fiori_AnalyticalListPage_AnalyticalListPage_0-content-Fiori_AnalyticalListPage_Content-1-chartcontent-Fiori_AnalyticalListPage_ChartContainer-1-charts-sap_chart_ColumnChart-1" width="100%" height="450px" visibleDimensions="__metadata/uri" visibleMeasures="Valor" vizProperties="{staticDataModel>/Fiori_AnalyticalListPage_AnalyticalListPage_0-content-Fiori_AnalyticalListPage_Content-1-chartcontent-Fiori_AnalyticalListPage_ChartContainer-1-charts-sap_chart_ColumnChart-1/vizProperties}" chartType="column" selectionMode="Single" uiConfig="{}">
+                                                <chart:dimensions>
+                                                    <data:Dimension name="__metadata/uri" label="KPIs" role="category" textProperty="Nombrekpi"/>
+                                                </chart:dimensions>
+                                                <chart:measures>
+                                                    <data:Measure name="Valor" label="Valor KPI" role="axis2"/>
+                                                </chart:measures>
+                                            </chart:Chart>
+                                        </items>
+                                    </VBox>
+                                </items>
+                            </VBox>
+                            <VBox visible="{= (${alpModel>/contentView} === 'table' || ${alpModel>/contentView} === 'charttable') }" class="sapSmartTemplatesAnalyticalListPageTableContainer">
+                                <items>
+                                    <Table width="100%" noDataText="No data" showSeparators="All" growing="true" growingScrollToLoad="true" growingThreshold="20" mode="MultiSelect" class="sapUiCompSmartTable" items="{path:'/KpiSet', templateShareable:true}">
+                                        <headerToolbar>
+                                            <OverflowToolbar design="Transparent" class="sapUiCompSmartTableToolbar" style="Clear">
+                                                <content>
+                                                    <Title textAlign="Begin" text="Sales Order Items (4)"/>
+                                                    <ToolbarSpacer/>
+                                                    <SegmentedButton>
+                                                        <items>
+                                                            <SegmentedButtonItem icon="sap-icon://show"/>
+                                                            <SegmentedButtonItem icon="sap-icon://hide"/>
+                                                        </items>
+                                                    </SegmentedButton>
+                                                    <OverflowToolbarButton text="Sort" type="Transparent" icon="sap-icon://action-settings" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                                                    <OverflowToolbarButton type="Transparent" text="Filter" icon="{path: 'alpModel>/exitFullscreenTable', formatter: '.formatFullscreenIconAnalyticalControl'}" iconFirst="true" width="auto" press="_onFioriAnalyticalListPageTablePress"/>
+                                                </content>
+                                            </OverflowToolbar>
+                                        </headerToolbar>
+                                        <columns>
+                                            <Column width="auto" hAlign="Center" vAlign="Middle" minScreenWidth="Phone" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                                                <header>
+                                                    <Text text="ID" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                </header>
+                                                <footer/>
+                                            </Column>
+                                            <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                                                <header>
+                                                    <Text text="KPI" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                </header>
+                                                <footer/>
+                                            </Column>
+                                            <Column width="auto" hAlign="Center" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                                                <header>
+                                                    <Text text="Valor" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                </header>
+                                                <footer/>
+                                            </Column>
+                                        </columns>
+                                        <items>
+                                            <ColumnListItem type="Active">
+                                                <cells>
+                                                    <Text text="{ID}" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                    <Text text="{Nombrekpi}" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                    <ObjectNumber number="{path: 'Valor', type: 'sap.ui.model.type.Float', formatOptions: { maxFractionDigits: 2 }}" unit="EA" emphasized="true" state="None"/>
+                                                    <ObjectNumber number="50000.00" unit="USD" emphasized="true" state="None"/>
+                                                    <layout:HorizontalLayout>
+                                                        <layout:content/>
+                                                    </layout:HorizontalLayout>
+                                                </cells>
+                                            </ColumnListItem>
+                                        </items>
+                                    </Table>
+                                </items>
+                            </VBox>
+                        </items>
+                    </VBox>
+                </items>
+            </VBox>
+        </f:content>
+        <f:dependents>
+            <Dialog showHeader="false" stretch="true" class="sapUiCompSmartFullScreenDialog sapUiSizeCompact">
+                <content/>
+            </Dialog>
+        </f:dependents>
+    </f:DynamicPage>
+</mvc:View>

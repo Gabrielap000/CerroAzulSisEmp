@@ -1,0 +1,1 @@
+[2022-12-02 05:10:03.482] [exthost] [error] Error: EEXIST: file already exists, open '/home/user/.vscode/data/User/workspaceStorage/-5db86f3a/vscode.lock'

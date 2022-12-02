@@ -1,0 +1,93 @@
+{
+  message: 'Starting Java server with: /home/user/java11/bin/java --add-modules=ALL-SYSTEM --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED -Declipse.application=org.eclipse.jdt.ls.core.id1 -Dosgi.bundles.defaultStartLevel=4 -Declipse.product=org.eclipse.jdt.ls.core.product -Dfile.encoding=utf8 -DwatchParentProcess=false -noverify -XX:MaxDirectMemorySize=10M -XX:MaxMetaspaceSize=98632K -Xss1M -Xmx437943K -XX:+UseG1GC -XX:+UseStringDeduplication -jar /extbin/local/openvscode-server/extensions/redhat.java-0.76.0/server/plugins/org.eclipse.equinox.launcher_1.6.100.v20201223-0822.jar -configuration /home/user/.vscode/data/User/globalStorage/redhat.java/0.76.0/config_linux -data /home/user/.vscode/data/User/workspaceStorage/-5db86f3a/redhat.java/jdt_ws',
+  level: 'info',
+  timestamp: '2022-12-02 04:17:53.223'
+}
+{
+  message: 'Starting Java server with: /home/user/java11/bin/java --add-modules=ALL-SYSTEM --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED -Declipse.application=org.eclipse.jdt.ls.core.id1 -Dosgi.bundles.defaultStartLevel=4 -Declipse.product=org.eclipse.jdt.ls.core.product -Dfile.encoding=utf8 -DwatchParentProcess=false -noverify -XX:MaxDirectMemorySize=10M -XX:MaxMetaspaceSize=98632K -Xss1M -Xmx437943K -XX:+UseG1GC -XX:+UseStringDeduplication -jar /extbin/local/openvscode-server/extensions/redhat.java-0.76.0/server/plugins/org.eclipse.equinox.launcher_1.6.100.v20201223-0822.jar -configuration /home/user/.vscode/data/User/globalStorage/redhat.java/0.76.0/config_linux -data /home/user/.vscode/data/User/workspaceStorage/-5db86f3a/redhat.java/jdt_ws',
+  level: 'info',
+  timestamp: '2022-12-02 04:28:41.323'
+}
+{
+  message: '[Error - 4:58:04 AM] Dec 2, 2022, 4:58:04 AM Failed to read package name from file:///home/user/.vscode/data/User/workspaceStorage/-5db86f3a-1/redhat.java\n' +
+    '/home/user/.vscode/data/User/workspaceStorage/-5db86f3a-1/redhat.java (Is a directory)\n' +
+    'java.io.FileNotFoundException: /home/user/.vscode/data/User/workspaceStorage/-5db86f3a-1/redhat.java (Is a directory)\n' +
+    '\tat java.base/java.io.FileInputStream.open0(Native Method)\n' +
+    '\tat java.base/java.io.FileInputStream.open(FileInputStream.java:219)\n' +
+    '\tat java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)\n' +
+    '\tat com.google.common.io.Files$FileByteSource.openStream(Files.java:130)\n' +
+    '\tat com.google.common.io.Files$FileByteSource.read(Files.java:154)\n' +
+    '\tat com.google.common.io.ByteSource$AsCharSource.read(ByteSource.java:470)\n' +
+    '\tat com.google.common.io.Files.toString(Files.java:254)\n' +
+    '\tat org.eclipse.jdt.ls.core.internal.JDTUtils.getPackageName(JDTUtils.java:297)\n' +
+    '\tat org.eclipse.jdt.ls.core.internal.JDTUtils.getFakeCompilationUnit(JDTUtils.java:261)\n' +
+    '\tat org.eclipse.jdt.ls.core.internal.JDTUtils.resolveCompilationUnit(JDTUtils.java:185)\n' +
+    '\tat org.eclipse.jdt.ls.core.internal.JDTUtils.resolveCompilationUnit(JDTUtils.java:165)\n' +
+    '\tat org.eclipse.jdt.ls.core.internal.handlers.WorkspaceEventsHandler.didChangeWatchedFiles(WorkspaceEventsHandler.java:82)\n' +
+    '\tat org.eclipse.jdt.ls.core.internal.handlers.JDTLanguageServer.didChangeWatchedFiles(JDTLanguageServer.java:493)\n' +
+    '\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n' +
+    '\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n' +
+    '\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n' +
+    '\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n' +
+    '\tat org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)\n' +
+    '\tat org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)\n' +
+    '\tat org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)\n' +
+    '\tat org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)\n' +
+    '\tat org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)\n' +
+    '\tat org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)\n' +
+    '\tat org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)\n' +
+    '\tat java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)\n' +
+    '\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n' +
+    '\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\n' +
+    '\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\n' +
+    '\tat java.base/java.lang.Thread.run(Thread.java:834)\n',
+  level: 'info',
+  timestamp: '2022-12-02 04:58:04.812'
+}
+{
+  message: '[Error - 4:58:04 AM] Dec 2, 2022, 4:58:04 AM Failed to create linked resource from file:///home/user/.vscode/data/User/workspaceStorage/-5db86f3a-1/redhat.java to jdt.ls-java-project\n' +
+    "Cannot create linked resource '/jdt.ls-java-project/src/redhat.java'.  Files cannot be linked to folders.\n" +
+    "org.eclipse.core.internal.resources.ResourceException(/jdt.ls-java-project/src/redhat.java)[276]: java.lang.Exception: Cannot create linked resource '/jdt.ls-java-project/src/redhat.java'.  Files cannot be linked to folders.\n" +
+    '\tat org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)\n' +
+    '\tat org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)\n' +
+    '\tat org.eclipse.core.internal.resources.Resource.assertLinkRequirements(Resource.java:189)\n' +
+    '\tat org.eclipse.core.internal.resources.Resource.createLink(Resource.java:636)\n' +
+    '\tat org.eclipse.jdt.ls.core.internal.JDTUtils.getFakeCompilationUnit(JDTUtils.java:270)\n' +
+    '\tat org.eclipse.jdt.ls.core.internal.JDTUtils.resolveCompilationUnit(JDTUtils.java:185)\n' +
+    '\tat org.eclipse.jdt.ls.core.internal.JDTUtils.resolveCompilationUnit(JDTUtils.java:165)\n' +
+    '\tat org.eclipse.jdt.ls.core.internal.handlers.WorkspaceEventsHandler.didChangeWatchedFiles(WorkspaceEventsHandler.java:82)\n' +
+    '\tat org.eclipse.jdt.ls.core.internal.handlers.JDTLanguageServer.didChangeWatchedFiles(JDTLanguageServer.java:493)\n' +
+    '\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n' +
+    '\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n' +
+    '\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n' +
+    '\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n' +
+    '\tat org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)\n' +
+    '\tat org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)\n' +
+    '\tat org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)\n' +
+    '\tat org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)\n' +
+    '\tat org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)\n' +
+    '\tat org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)\n' +
+    '\tat org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)\n' +
+    '\tat java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)\n' +
+    '\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n' +
+    '\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\n' +
+    '\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\n' +
+    '\tat java.base/java.lang.Thread.run(Thread.java:834)\n',
+  level: 'info',
+  timestamp: '2022-12-02 04:58:04.845'
+}
+{
+  message: 'Starting Java server with: /home/user/java11/bin/java --add-modules=ALL-SYSTEM --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED -Declipse.application=org.eclipse.jdt.ls.core.id1 -Dosgi.bundles.defaultStartLevel=4 -Declipse.product=org.eclipse.jdt.ls.core.product -Dfile.encoding=utf8 -DwatchParentProcess=false -noverify -XX:MaxDirectMemorySize=10M -XX:MaxMetaspaceSize=98632K -Xss1M -Xmx437943K -XX:+UseG1GC -XX:+UseStringDeduplication -jar /extbin/local/openvscode-server/extensions/redhat.java-0.76.0/server/plugins/org.eclipse.equinox.launcher_1.6.100.v20201223-0822.jar -configuration /home/user/.vscode/data/User/globalStorage/redhat.java/0.76.0/config_linux -data /home/user/.vscode/data/User/workspaceStorage/-5db86f3a/redhat.java/jdt_ws',
+  level: 'info',
+  timestamp: '2022-12-02 05:17:29.535'
+}
+{
+  message: 'Starting Java server with: /home/user/java11/bin/java --add-modules=ALL-SYSTEM --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED -Declipse.application=org.eclipse.jdt.ls.core.id1 -Dosgi.bundles.defaultStartLevel=4 -Declipse.product=org.eclipse.jdt.ls.core.product -Dfile.encoding=utf8 -DwatchParentProcess=false -noverify -XX:MaxDirectMemorySize=10M -XX:MaxMetaspaceSize=98632K -Xss1M -Xmx437943K -XX:+UseG1GC -XX:+UseStringDeduplication -jar /extbin/local/openvscode-server/extensions/redhat.java-0.76.0/server/plugins/org.eclipse.equinox.launcher_1.6.100.v20201223-0822.jar -configuration /home/user/.vscode/data/User/globalStorage/redhat.java/0.76.0/config_linux -data /home/user/.vscode/data/User/workspaceStorage/-5db86f3a/redhat.java/jdt_ws',
+  level: 'info',
+  timestamp: '2022-12-02 05:21:57.173'
+}
+{
+  message: 'Starting Java server with: /home/user/java11/bin/java --add-modules=ALL-SYSTEM --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED -Declipse.application=org.eclipse.jdt.ls.core.id1 -Dosgi.bundles.defaultStartLevel=4 -Declipse.product=org.eclipse.jdt.ls.core.product -Dfile.encoding=utf8 -DwatchParentProcess=false -noverify -XX:MaxDirectMemorySize=10M -XX:MaxMetaspaceSize=98632K -Xss1M -Xmx437943K -XX:+UseG1GC -XX:+UseStringDeduplication -jar /extbin/local/openvscode-server/extensions/redhat.java-0.76.0/server/plugins/org.eclipse.equinox.launcher_1.6.100.v20201223-0822.jar -configuration /home/user/.vscode/data/User/globalStorage/redhat.java/0.76.0/config_linux -data /home/user/.vscode/data/User/workspaceStorage/-5db86f3a/redhat.java/jdt_ws',
+  level: 'info',
+  timestamp: '2022-12-02 05:34:05.124'
+}

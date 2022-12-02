@@ -1,0 +1,163 @@
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+    <edmx:DataServices m:DataServiceVersion="2.0">
+        <Schema Namespace="39e605a6ba135e42182ebae6" xml:lang="en" sap:schema-version="0000" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+            <EntityContainer Name="39e605a6ba135e42182ebae6_Entities" m:IsDefaultEntityContainer="true">
+                <EntitySet Name="TrayectosSet" EntityType="39e605a6ba135e42182ebae6.Trayectos" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+                <AssociationSet Name="TrayectosComentariosComentarios" Association="39e605a6ba135e42182ebae6.TrayectosComentariosComentarios" sap:creatable="true" sap:updatable="true" sap:deletable="true">
+                    <End EntitySet="TrayectosSet" Role="FromRole_TrayectosComentariosComentarios"/>
+                    <End EntitySet="ComentariosSet" Role="ToRole_TrayectosComentariosComentarios"/>
+                </AssociationSet>
+                <AssociationSet Name="TrayectosEventualidadesEventualidades" Association="39e605a6ba135e42182ebae6.TrayectosEventualidadesEventualidades" sap:creatable="true" sap:updatable="true" sap:deletable="true">
+                    <End EntitySet="TrayectosSet" Role="FromRole_TrayectosEventualidadesEventualidades"/>
+                    <End EntitySet="EventualidadesSet" Role="ToRole_TrayectosEventualidadesEventualidades"/>
+                </AssociationSet>
+                <AssociationSet Name="TrayectosKpisKpi" Association="39e605a6ba135e42182ebae6.TrayectosKpisKpi" sap:creatable="true" sap:updatable="true" sap:deletable="true">
+                    <End EntitySet="TrayectosSet" Role="FromRole_TrayectosKpisKpi"/>
+                    <End EntitySet="KpiSet" Role="ToRole_TrayectosKpisKpi"/>
+                </AssociationSet>
+                <AssociationSet Name="TrayectosProductosProductos" Association="39e605a6ba135e42182ebae6.TrayectosProductosProductos" sap:creatable="true" sap:updatable="true" sap:deletable="true">
+                    <End EntitySet="TrayectosSet" Role="FromRole_TrayectosProductosProductos"/>
+                    <End EntitySet="ProductosSet" Role="ToRole_TrayectosProductosProductos"/>
+                </AssociationSet>
+                <EntitySet Name="ComentariosSet" EntityType="39e605a6ba135e42182ebae6.Comentarios" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+                <EntitySet Name="EventualidadesSet" EntityType="39e605a6ba135e42182ebae6.Eventualidades" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+                <EntitySet Name="ProductosSet" EntityType="39e605a6ba135e42182ebae6.Productos" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+                <EntitySet Name="KpiSet" EntityType="39e605a6ba135e42182ebae6.Kpi" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+                <EntitySet Name="ConductoresSet" EntityType="39e605a6ba135e42182ebae6.Conductores" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+                <AssociationSet Name="ConductoresTrayectosTrayectos" Association="39e605a6ba135e42182ebae6.ConductoresTrayectosTrayectos" sap:creatable="true" sap:updatable="true" sap:deletable="true">
+                    <End EntitySet="ConductoresSet" Role="FromRole_ConductoresTrayectosTrayectos"/>
+                    <End EntitySet="TrayectosSet" Role="ToRole_ConductoresTrayectosTrayectos"/>
+                </AssociationSet>
+            </EntityContainer>
+            <EntityType Name="Trayectos">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="Origen" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Origen"/>
+                <Property Name="CiudadCargue" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="CiudadCargue"/>
+                <Property Name="CiudadDescargue" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="CiudadDescargue"/>
+                <Property Name="DistanciaPromedio" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="DistanciaPromedio"/>
+                <Property Name="FechaSalida" Type="Edm.DateTime" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:display-format="Date" sap:label="FechaSalida"/>
+                <Property Name="FechaLLegada" Type="Edm.DateTime" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:display-format="Date" sap:label="FechaLLegada"/>
+                <Property Name="Anticipo" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Anticipo"/>
+                <Property Name="CalificacionViaje" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="CalificacionViaje"/>
+                <Property Name="Estado" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Estado"/>
+                <Property Name="TiempoPromedio" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="TiempoPromedio"/>
+                <Property Name="___FK_b47565bcf375314e184275e7_00044" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="___FK_b47565bcf375314e184275e7_00044"/>
+                <NavigationProperty Name="Comentarios" Relationship="39e605a6ba135e42182ebae6.TrayectosComentariosComentarios" FromRole="FromRole_TrayectosComentariosComentarios" ToRole="ToRole_TrayectosComentariosComentarios"/>
+                <NavigationProperty Name="Eventualidades" Relationship="39e605a6ba135e42182ebae6.TrayectosEventualidadesEventualidades" FromRole="FromRole_TrayectosEventualidadesEventualidades" ToRole="ToRole_TrayectosEventualidadesEventualidades"/>
+                <NavigationProperty Name="Kpis" Relationship="39e605a6ba135e42182ebae6.TrayectosKpisKpi" FromRole="FromRole_TrayectosKpisKpi" ToRole="ToRole_TrayectosKpisKpi"/>
+                <NavigationProperty Name="Productos" Relationship="39e605a6ba135e42182ebae6.TrayectosProductosProductos" FromRole="FromRole_TrayectosProductosProductos" ToRole="ToRole_TrayectosProductosProductos"/>
+            </EntityType>
+            <Association Name="TrayectosComentariosComentarios">
+                <End Type="39e605a6ba135e42182ebae6.Trayectos" Multiplicity="1" Role="FromRole_TrayectosComentariosComentarios"/>
+                <End Type="39e605a6ba135e42182ebae6.Comentarios" Multiplicity="*" Role="ToRole_TrayectosComentariosComentarios"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_TrayectosComentariosComentarios">
+                        <PropertyRef Name="ID"/>
+                    </Principal>
+                    <Dependent Role="ToRole_TrayectosComentariosComentarios">
+                        <PropertyRef Name="___FK_b47565bcf375314e184275e7_00036"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="TrayectosEventualidadesEventualidades">
+                <End Type="39e605a6ba135e42182ebae6.Trayectos" Multiplicity="1" Role="FromRole_TrayectosEventualidadesEventualidades"/>
+                <End Type="39e605a6ba135e42182ebae6.Eventualidades" Multiplicity="*" Role="ToRole_TrayectosEventualidadesEventualidades"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_TrayectosEventualidadesEventualidades">
+                        <PropertyRef Name="ID"/>
+                    </Principal>
+                    <Dependent Role="ToRole_TrayectosEventualidadesEventualidades">
+                        <PropertyRef Name="___FK_b47565bcf375314e184275e7_00038"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="TrayectosKpisKpi">
+                <End Type="39e605a6ba135e42182ebae6.Trayectos" Multiplicity="1" Role="FromRole_TrayectosKpisKpi"/>
+                <End Type="39e605a6ba135e42182ebae6.Kpi" Multiplicity="*" Role="ToRole_TrayectosKpisKpi"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_TrayectosKpisKpi">
+                        <PropertyRef Name="ID"/>
+                    </Principal>
+                    <Dependent Role="ToRole_TrayectosKpisKpi">
+                        <PropertyRef Name="___FK_b47565bcf375314e184275e7_00042"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="TrayectosProductosProductos">
+                <End Type="39e605a6ba135e42182ebae6.Trayectos" Multiplicity="1" Role="FromRole_TrayectosProductosProductos"/>
+                <End Type="39e605a6ba135e42182ebae6.Productos" Multiplicity="*" Role="ToRole_TrayectosProductosProductos"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_TrayectosProductosProductos">
+                        <PropertyRef Name="ID"/>
+                    </Principal>
+                    <Dependent Role="ToRole_TrayectosProductosProductos">
+                        <PropertyRef Name="___FK_77ad81a42d0f190218428210_00001"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <EntityType Name="Comentarios">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="Tipo" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Tipo"/>
+                <Property Name="Descripcion" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Descripcion"/>
+                <Property Name="___FK_b47565bcf375314e184275e7_00036" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="___FK_b47565bcf375314e184275e7_00036"/>
+            </EntityType>
+            <EntityType Name="Eventualidades">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="Suceso" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Suceso"/>
+                <Property Name="Descripcion" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Descripcion"/>
+                <Property Name="___FK_b47565bcf375314e184275e7_00038" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="___FK_b47565bcf375314e184275e7_00038"/>
+            </EntityType>
+            <EntityType Name="Productos">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="Imagen" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Imagen"/>
+                <Property Name="Nombre" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Nombre"/>
+                <Property Name="Categoria" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Categoria"/>
+                <Property Name="Cantidad" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Cantidad"/>
+                <Property Name="___FK_77ad81a42d0f190218428210_00001" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="___FK_77ad81a42d0f190218428210_00001"/>
+            </EntityType>
+            <EntityType Name="Kpi">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="Nombrekpi" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Nombrekpi"/>
+                <Property Name="Valor" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Valor"/>
+                <Property Name="___FK_b47565bcf375314e184275e7_00042" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="___FK_b47565bcf375314e184275e7_00042"/>
+            </EntityType>
+            <EntityType Name="Conductores">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="Imagen" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Imagen"/>
+                <Property Name="Nombre" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Nombre"/>
+                <Property Name="AnticipoMensual" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="AnticipoMensual"/>
+                <NavigationProperty Name="Trayectos" Relationship="39e605a6ba135e42182ebae6.ConductoresTrayectosTrayectos" FromRole="FromRole_ConductoresTrayectosTrayectos" ToRole="ToRole_ConductoresTrayectosTrayectos"/>
+            </EntityType>
+            <Association Name="ConductoresTrayectosTrayectos">
+                <End Type="39e605a6ba135e42182ebae6.Conductores" Multiplicity="1" Role="FromRole_ConductoresTrayectosTrayectos"/>
+                <End Type="39e605a6ba135e42182ebae6.Trayectos" Multiplicity="*" Role="ToRole_ConductoresTrayectosTrayectos"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_ConductoresTrayectosTrayectos">
+                        <PropertyRef Name="ID"/>
+                    </Principal>
+                    <Dependent Role="ToRole_ConductoresTrayectosTrayectos">
+                        <PropertyRef Name="___FK_b47565bcf375314e184275e7_00044"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>

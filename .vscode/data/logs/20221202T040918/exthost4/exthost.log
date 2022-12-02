@@ -1,0 +1,27 @@
+[2022-12-02 04:38:20.775] [exthost] [error] An error occurred when deactivating the extension 'SAP.vscode-wing-gerrit':
+[2022-12-02 04:38:20.775] [exthost] [error] TypeError: e is not iterable
+	at t.GerritHelper.clean (/extbin/local/openvscode-server/extensions/vscode-wing-gerrit-0.1.1/dist/extension.js:2:300753)
+	at Object.t.deactivate (/extbin/local/openvscode-server/extensions/vscode-wing-gerrit-0.1.1/dist/extension.js:2:296016)
+	at b._deactivate (/extbin/local/openvscode-server/out/vs/workbench/api/node/extensionHostProcess.js:97:13255)
+	at /extbin/local/openvscode-server/out/vs/workbench/api/node/extensionHostProcess.js:97:10641
+	at Array.map (<anonymous>)
+	at b._deactivateAll (/extbin/local/openvscode-server/out/vs/workbench/api/node/extensionHostProcess.js:97:10628)
+	at b.terminate (/extbin/local/openvscode-server/out/vs/workbench/api/node/extensionHostProcess.js:97:11012)
+	at b.terminate (/extbin/local/openvscode-server/out/vs/workbench/api/node/extensionHostProcess.js:101:620)
+	at m (/extbin/local/openvscode-server/out/vs/workbench/api/node/extensionHostProcess.js:111:19088)
+	at /extbin/local/openvscode-server/out/vs/workbench/api/node/extensionHostProcess.js:111:17016
+	at b.invoke (/extbin/local/openvscode-server/out/vs/workbench/api/node/extensionHostProcess.js:61:145)
+	at p.deliver (/extbin/local/openvscode-server/out/vs/workbench/api/node/extensionHostProcess.js:61:2266)
+	at v.fire (/extbin/local/openvscode-server/out/vs/workbench/api/node/extensionHostProcess.js:61:1844)
+	at a.fire (/extbin/local/openvscode-server/out/vs/workbench/api/node/extensionHostProcess.js:69:19042)
+	at r._receiveMessage (/extbin/local/openvscode-server/out/vs/workbench/api/node/extensionHostProcess.js:69:23854)
+	at /extbin/local/openvscode-server/out/vs/workbench/api/node/extensionHostProcess.js:69:21224
+	at b.invoke (/extbin/local/openvscode-server/out/vs/workbench/api/node/extensionHostProcess.js:61:145)
+	at p.deliver (/extbin/local/openvscode-server/out/vs/workbench/api/node/extensionHostProcess.js:61:2266)
+	at v.fire (/extbin/local/openvscode-server/out/vs/workbench/api/node/extensionHostProcess.js:61:1844)
+	at v.acceptChunk (/extbin/local/openvscode-server/out/vs/workbench/api/node/extensionHostProcess.js:69:15873)
+	at /extbin/local/openvscode-server/out/vs/workbench/api/node/extensionHostProcess.js:69:15003
+	at b.invoke (/extbin/local/openvscode-server/out/vs/workbench/api/node/extensionHostProcess.js:61:145)
+	at p.deliver (/extbin/local/openvscode-server/out/vs/workbench/api/node/extensionHostProcess.js:61:2266)
+	at v.fire (/extbin/local/openvscode-server/out/vs/workbench/api/node/extensionHostProcess.js:61:1844)
+	at v._processReadQueue (/extbin/local/openvscode-server/out/vs/workbench/api/node/extensionHostProcess.js:69:34245)

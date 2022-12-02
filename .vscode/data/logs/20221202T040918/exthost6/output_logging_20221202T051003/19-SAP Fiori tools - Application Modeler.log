@@ -1,0 +1,49 @@
+05:10:12 [INFO] - Running activation sequence for Fiori tools - Application Modeler
+05:10:12 [INFO] - Configurations: 'sap.ux.applicationModeler.showJsonSchemas': false; isTheia(): false; isAppStudio(): true
+05:10:14 [INFO] - Register Fiori tools file system for configurations...
+05:10:14 [INFO] - ...Fiori tools file system registered in 0.772ms
+05:10:14 [INFO] - Register views for configurations...
+05:10:14 [INFO] - ...views for configurations registered in 0.842ms
+05:10:14 [INFO] - Register commands...
+05:10:14 [INFO] - ...commands registered in 3.704ms
+05:10:14 [INFO] - Activating sync module...
+05:10:14 [INFO] - Virtual file system ftfs initialized in 0.148ms
+05:10:14 [INFO] - Searching for projects in these workspace folders: 
+[ '/home/user' ]
+05:10:18 [INFO] - SAP UX projects found and added in 4349.542ms
+05:10:18 [INFO] - Start watching **/package.json
+05:10:18 [INFO] - package.json watched in 1.393ms
+05:10:18 [INFO] - Start watching for workspace folder changes
+05:10:18 [INFO] - Workspace folders watched in 3.143ms
+05:10:18 [INFO] - Configs watched in 0.276ms
+05:10:18 [INFO] - ...sync module activated in 4359.755ms
+05:10:18 [INFO] - Activating launch config integration
+05:10:18 [INFO] - Handler for Fiori launch configuration registered
+05:10:18 [INFO] - ...launch config integration activated in 2.729ms
+05:10:18 [INFO] - Activating migration module...
+05:10:18 [INFO] - SAP Fiori tools - Application Modeler
+'Migration start watching for workspace folder changes'
+05:10:18 [INFO] - Workspace folders watched in 0.785ms
+05:10:18 [INFO] - SAP Fiori tools - Application Modeler
+'Migration start watching **/package.json'
+05:10:18 [INFO] - package.json watched in 0.813ms
+05:10:18 [INFO] - SAP Fiori tools - Application Modeler
+'Migration start watching **/pom.xml'
+05:10:18 [INFO] - pom.xml watched in 0.992ms
+05:10:18 [INFO] - SAP Fiori tools - Application Modeler
+'Migration start watching **/neo-app.json'
+05:10:18 [INFO] - neo-app.json watched in 0.500ms
+05:10:18 [INFO] - SAP Fiori tools - Application Modeler
+'Migration start watching **/manifest.json'
+05:10:18 [INFO] - manifest.json watched in 0.484ms
+05:10:24 [INFO] - ...migration module activated in 5510.299ms
+05:10:24 [INFO] - activation sequence for Fiori tools - Application Modeler done in 12209.857ms
+05:19:42 [ERROR] - Error while starting preview. Details: 
+[Error: 
+	at getPreviewUrlParts (/extbin/local/openvscode-server/extensions/sap-ux-application-modeler-extension-1.8.2/dist/extension-min.js:2696:110173)
+	at async startAndLaunch (/extbin/local/openvscode-server/extensions/sap-ux-application-modeler-extension-1.8.2/dist/extension-min.js:2696:116576)]
+05:21:18 [WARN] - Could not find any SAP Fiori projects in workspace
+05:21:25 [ERROR] - Error while starting preview. Details: 
+[Error: 
+	at getPreviewUrlParts (/extbin/local/openvscode-server/extensions/sap-ux-application-modeler-extension-1.8.2/dist/extension-min.js:2696:110173)
+	at async startAndLaunch (/extbin/local/openvscode-server/extensions/sap-ux-application-modeler-extension-1.8.2/dist/extension-min.js:2696:116576)]

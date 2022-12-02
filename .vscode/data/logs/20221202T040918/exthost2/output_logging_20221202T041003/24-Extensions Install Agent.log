@@ -1,0 +1,334 @@
+npm config set @sapflp:registry https://common.repositories.cloud.sap/api/npm/flp-generator/
+npm config set @uicard-dk-bas:registry https://common.repositories.cloud.sap/api/npm/deploy.releases.npm/
+npm config set @sap-lcnc:registry https://common.repositories.cloud.sap/api/npm/deploy.releases.npm/
+npm config set @sap-cds:registry https://common.repositories.cloud.sap/api/npm/deploy.releases.npm/
+npm config set @devx-wing:registry https://common.repositories.cloud.sap/api/npm/devx-npm-live/
+npm config set @sapdmz:registry https://common.repositories.cloud.sap/artifactory/api/npm/build.releases.npm/
+npm config set @sap-ux-rel:registry https://common.repositories.cloud.sap/artifactory/api/npm/deploy.milestones.npm/
+npm config set @workflow:registry https://common.repositories.cloud.sap/artifactory/api/npm/build.releases.npm/
+npm config set @bas-dev:registry https://common.repositories.cloud.sap/api/npm/devx-npm-live/
+npm config set @adaptation-project:registry https://registry.npmjs.org/
+yarn global add --prefix /extbin/npm/globals --global-folder /extbin/npm/globals/lib @sap/generator-add-hdb-module@1.5.2 @sap/generator-hdb-project@1.5.2 @sap/generator-cap-project@1.6.6 @sap/cds-dk@6.3.1 @sap/generator-fiori@1.8.2 @workflow/generator-workflow-module@1.14.0 @workflow/generator-workflow-sample@1.9.0 @sapse/business-application-studio-extension-management@^1.0.0 @sap/generator-adaptation-project@0.2.19 @sap/generator-adaptation-project-deployment@0.0.28
+[1/4] Resolving packages...
+warning @sap/generator-add-hdb-module > @sap/cf-tools > url > querystring@0.2.0: The querystring API is considered Legacy. new code should use the URLSearchParams API instead.
+warning @sap/generator-cap-project > @vscode-logging/logger > streamroller@2.2.3: 2.x is no longer supported. Please upgrade to 3.x or higher.
+warning @sap/generator-cap-project > @vscode-logging/logger > streamroller > date-format@2.1.0: 2.x is no longer supported. Please upgrade to 4.x or higher.
+warning @sap/cds-dk > sqlite3 > node-gyp > make-fetch-happen > cacache > @npmcli/move-file@1.1.2: This functionality has been moved to @npmcli/fs
+warning @workflow/generator-workflow-sample > @sap/generator-fiori > yeoman-environment > @npmcli/arborist > @npmcli/move-file@1.1.2: This functionality has been moved to @npmcli/fs
+warning @workflow/generator-workflow-sample > @sap/generator-fiori > @sap/cds > @sap-cloud-sdk/util@1.54.2: 1.x is no longer maintained.
+warning @workflow/generator-workflow-sample > @sap/generator-fiori > @sap/cds > @sap-cloud-sdk/core@1.54.2: Version 1 of SAP Cloud SDK is no longer maintained. Check the upgrade guide for switching to version 2: https://sap.github.io/cloud-sdk/docs/js/guides/upgrade-to-version-2.
+warning @workflow/generator-workflow-sample > @sap/generator-fiori > @sap/cds > @sap-cloud-sdk/core > @sap-cloud-sdk/util@1.54.2: 1.x is no longer maintained.
+warning @workflow/generator-workflow-sample > @sap/generator-fiori > yeoman-environment > @npmcli/arborist > npm-registry-fetch > make-fetch-happen > cacache > @npmcli/move-file@2.0.1: This functionality has been moved to @npmcli/fs
+warning @workflow/generator-workflow-sample > @sap/generator-fiori > yeoman-environment > @npmcli/arborist > readdir-scoped-modules@1.1.0: This functionality has been moved to @npmcli/fs
+warning @workflow/generator-workflow-sample > @sap/generator-fiori > @sap/cds > @sap-cloud-sdk/core > @sap-cloud-sdk/analytics@1.54.2: 1.x is no longer maintained.
+warning @workflow/generator-workflow-sample > @sap/generator-fiori > @sap/cds > @sap-cloud-sdk/core > @sap-cloud-sdk/analytics > @sap-cloud-sdk/util@1.54.2: 1.x is no longer maintained.
+warning @sapse/business-application-studio-extension-management > jsdom > request-promise-native@1.0.9: request-promise-native has been deprecated because it extends the now deprecated request package, see https://github.com/request/request/issues/3142
+warning @sapse/business-application-studio-extension-management > jsdom > request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+warning @sapse/business-application-studio-extension-management > jsdom > request > uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+warning @sapse/business-application-studio-extension-management > jsdom > w3c-hr-time@1.0.2: Use your platform's native performance.now() and performance.timeOrigin.
+warning @sapse/business-application-studio-extension-management > jsdom > request > har-validator@5.1.5: this library is no longer supported
+[2/4] Fetching packages...
+warning @sap-ux/fiori-elements-writer@0.2.0: The engine "pnpm" appears to be invalid.
+warning @sap-ux/fiori-freestyle-writer@0.11.6: The engine "pnpm" appears to be invalid.
+warning @sap-ux/ui5-config@0.13.1: The engine "pnpm" appears to be invalid.
+warning @sap-ux/odata-service-writer@0.11.6: The engine "pnpm" appears to be invalid.
+warning @sap-ux/ui5-application-writer@0.12.7: The engine "pnpm" appears to be invalid.
+warning @sap-ux/ui5-application-writer@0.12.6: The engine "pnpm" appears to be invalid.
+warning @sap-ux/yaml@0.11.4: The engine "pnpm" appears to be invalid.
+warning @sap/generator-adaptation-project-deployment@0.0.28: The engine "vscode" appears to be invalid.
+warning @sap-ux/axios-extension@0.9.4: The engine "pnpm" appears to be invalid.
+warning @sap-ux/btp-utils@0.10.4: The engine "pnpm" appears to be invalid.
+warning @sap-ux/logger@0.2.2: The engine "pnpm" appears to be invalid.
+warning "@workflow/generator-workflow-sample > @sap/generator-fiori > yeoman-environment@3.8.0" has unmet peer dependency "mem-fs@^1.2.0 || ^2.0.0".
+warning "@workflow/generator-workflow-sample > @sap/generator-fiori > yeoman-environment@3.8.0" has unmet peer dependency "mem-fs-editor@^8.1.2 || ^9.0.0".
+warning "@sapse/business-application-studio-extension-management > axios-cookiejar-support@1.0.0" has unmet peer dependency "@types/tough-cookie@>=2.3.3".
+[3/4] Linking dependencies...
+[4/4] Building fresh packages...
+warning "@sap/generator-add-hdb-module@1.5.2" has no binaries
+warning "@sap/generator-hdb-project@1.5.2" has no binaries
+warning "@sap/generator-cap-project@1.6.6" has no binaries
+warning "@sap/generator-fiori@1.8.2" has no binaries
+warning "@workflow/generator-workflow-module@1.14.0" has no binaries
+warning "@workflow/generator-workflow-sample@1.9.0" has no binaries
+warning "@sap/generator-adaptation-project@0.2.19" has no binaries
+success Installed "@sap/cds-dk@6.3.1" with binaries:
+      - cds
+      - cds-ts
+success Installed "@sapse/business-application-studio-extension-management@1.1.0" with binaries:
+      - wex
+warning "@sap/generator-adaptation-project-deployment@0.0.28" has no binaries
+npm install --prefix /extbin/npm/globals -g @sapflp/generator-launchpad-module@1.25.1-20220904065125 @uicard-dk-bas/generator-sap-uicard@1.3.2 @uicard-dk-bas/generator-sap-mtb-uicard@1.3.1 @uicard-dk-bas/generator-sap-contentpackage@1.3.1 @uicard-dk-bas/generator-sap-ws-template@1.3.1 @sapdmz/generator-html5-project@0.1.0 @sapdmz/generator-vue-module@0.0.27 @sapdmz/generator-html5-module@0.0.18 @sapdmz/generator-reactjs-module@0.0.22
+npm notice [SECURITY] lodash has the following vulnerability: 1 high. Go here for more details: https://github.com/advisories?query=lodash - Run `npm i npm@latest -g` to upgrade your npm version, and then `npm audit` to get more info.
+npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+npm WARN deprecated querystring@0.2.0: The querystring API is considered Legacy. new code should use the URLSearchParams API instead.
+npm WARN deprecated har-validator@5.1.5: this library is no longer supported
+npm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm WARN deprecated streamroller@2.2.3: 2.x is no longer supported. Please upgrade to 3.x or higher.
+npm WARN deprecated date-format@2.1.0: 2.x is no longer supported. Please upgrade to 4.x or higher.
+npm WARN notsup Unsupported engine for @sapdmz/generator-html5-project@0.1.0: wanted: {"npm":">= 8.0.0"} (current: {"node":"14.21.0","npm":"6.14.17"})
+npm WARN notsup Not compatible with your version of node/npm: @sapdmz/generator-html5-project@0.1.0
+
+npm ERR! code E404
+npm ERR! 404 Not Found - GET https://registry.yarnpkg.com/generator-templates-exploration - Not found
+npm ERR! 404 
+npm ERR! 404  'generator-templates-exploration@0.1.7' is not in the npm registry.
+npm ERR! 404 You should bug the author to publish it (or use the name yourself!)
+npm ERR! 404 It was specified as a dependency of '@sapdmz/generator-html5-project'
+npm ERR! 404 
+npm ERR! 404 Note that you can also install from a
+npm ERR! 404 tarball, folder, http url, or git url.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/user/.npm/_logs/2022-12-02T04_10_06_645Z-debug.log
+RETRY - Failed to install the @sapflp/generator-launchpad-module module during the first try. Trying to reinstall it separately.
+npm install --prefix /extbin/npm/globals -g @sapflp/generator-launchpad-module@1.25.1-20220904065125
+npm notice [SECURITY] ansi-regex has the following vulnerability: 1 moderate. Go here for more details: https://github.com/advisories?query=ansi-regex - Run `npm i npm@latest -g` to upgrade your npm version, and then `npm audit` to get more info.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.3.2 (node_modules/@sapflp/generator-launchpad-module/node_modules/@sapflp/generator-flp/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.3.2: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
++ @sapflp/generator-launchpad-module@1.25.1-20220904065125
+added 877 packages from 800 contributors in 142.253s
+RETRY - Failed to install the @uicard-dk-bas/generator-sap-uicard module during the first try. Trying to reinstall it separately.
+npm install --prefix /extbin/npm/globals -g @uicard-dk-bas/generator-sap-uicard@1.3.2
+npm notice [SECURITY] got has the following vulnerability: 1 moderate. Go here for more details: https://github.com/advisories?query=got - Run `npm i npm@latest -g` to upgrade your npm version, and then `npm audit` to get more info.
+npm notice [SECURITY] glob-parent has the following vulnerability: 1 moderate. Go here for more details: https://github.com/advisories?query=glob-parent - Run `npm i npm@latest -g` to upgrade your npm version, and then `npm audit` to get more info.
+npm WARN deprecated source-map-resolve@0.5.3: See https://github.com/lydell/source-map-resolve#deprecated
+npm WARN deprecated resolve-url@0.2.1: https://github.com/lydell/resolve-url#deprecated
+npm WARN deprecated urix@0.1.0: Please see https://github.com/lydell/urix#deprecated
+npm WARN deprecated source-map-url@0.4.1: See https://github.com/lydell/source-map-url#deprecated
+npm notice [SECURITY] ejs has the following vulnerability: 1 critical. Go here for more details: https://github.com/advisories?query=ejs - Run `npm i npm@latest -g` to upgrade your npm version, and then `npm audit` to get more info.
+npm WARN lifecycle The node binary used for scripts is /tmp/yarn--1669954078801-0.9414866942507061/node but npm is using /usr/bin/node itself. Use the `--scripts-prepend-node-path` option to include the path for the node binary npm was executed with.
+
+> ejs@2.7.4 postinstall /extbin/npm/globals/lib/node_modules/@uicard-dk-bas/generator-sap-uicard/node_modules/yeoman-environment/node_modules/ejs
+> node ./postinstall.js
+
+Thank you for installing [35mEJS[0m: built with the [32mJake[0m JavaScript build tool ([32mhttps://jakejs.com/[0m)
+
++ @uicard-dk-bas/generator-sap-uicard@1.3.2
+added 407 packages from 301 contributors in 30.848s
+RETRY - Failed to install the @uicard-dk-bas/generator-sap-mtb-uicard module during the first try. Trying to reinstall it separately.
+npm install --prefix /extbin/npm/globals -g @uicard-dk-bas/generator-sap-mtb-uicard@1.3.1
+npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+npm WARN deprecated har-validator@5.1.5: this library is no longer supported
+npm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm WARN deprecated source-map-resolve@0.5.3: See https://github.com/lydell/source-map-resolve#deprecated
+npm WARN deprecated source-map-url@0.4.1: See https://github.com/lydell/source-map-url#deprecated
+npm WARN deprecated urix@0.1.0: Please see https://github.com/lydell/urix#deprecated
+npm WARN deprecated resolve-url@0.2.1: https://github.com/lydell/resolve-url#deprecated
+npm WARN lifecycle The node binary used for scripts is /tmp/yarn--1669954078801-0.9414866942507061/node but npm is using /usr/bin/node itself. Use the `--scripts-prepend-node-path` option to include the path for the node binary npm was executed with.
+
+> ejs@2.7.4 postinstall /extbin/npm/globals/lib/node_modules/@uicard-dk-bas/generator-sap-mtb-uicard/node_modules/yeoman-environment/node_modules/ejs
+> node ./postinstall.js
+
+Thank you for installing [35mEJS[0m: built with the [32mJake[0m JavaScript build tool ([32mhttps://jakejs.com/[0m)
+
++ @uicard-dk-bas/generator-sap-mtb-uicard@1.3.1
+added 454 packages from 396 contributors in 17.784s
+RETRY - Failed to install the @uicard-dk-bas/generator-sap-contentpackage module during the first try. Trying to reinstall it separately.
+npm install --prefix /extbin/npm/globals -g @uicard-dk-bas/generator-sap-contentpackage@1.3.1
+npm WARN deprecated source-map-resolve@0.5.3: See https://github.com/lydell/source-map-resolve#deprecated
+npm WARN deprecated resolve-url@0.2.1: https://github.com/lydell/resolve-url#deprecated
+npm WARN deprecated urix@0.1.0: Please see https://github.com/lydell/urix#deprecated
+npm WARN deprecated source-map-url@0.4.1: See https://github.com/lydell/source-map-url#deprecated
+npm WARN lifecycle The node binary used for scripts is /tmp/yarn--1669954078801-0.9414866942507061/node but npm is using /usr/bin/node itself. Use the `--scripts-prepend-node-path` option to include the path for the node binary npm was executed with.
+
+> ejs@2.7.4 postinstall /extbin/npm/globals/lib/node_modules/@uicard-dk-bas/generator-sap-contentpackage/node_modules/yeoman-environment/node_modules/ejs
+> node ./postinstall.js
+
+Thank you for installing [35mEJS[0m: built with the [32mJake[0m JavaScript build tool ([32mhttps://jakejs.com/[0m)
+
++ @uicard-dk-bas/generator-sap-contentpackage@1.3.1
+added 410 packages from 347 contributors in 12.554s
+RETRY - Failed to install the @uicard-dk-bas/generator-sap-ws-template module during the first try. Trying to reinstall it separately.
+npm install --prefix /extbin/npm/globals -g @uicard-dk-bas/generator-sap-ws-template@1.3.1
+npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+npm notice [SECURITY] jszip has the following vulnerability: 1 moderate. Go here for more details: https://github.com/advisories?query=jszip - Run `npm i npm@latest -g` to upgrade your npm version, and then `npm audit` to get more info.
+npm WARN deprecated har-validator@5.1.5: this library is no longer supported
+npm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm WARN deprecated source-map-resolve@0.5.3: See https://github.com/lydell/source-map-resolve#deprecated
+npm WARN deprecated urix@0.1.0: Please see https://github.com/lydell/urix#deprecated
+npm WARN deprecated resolve-url@0.2.1: https://github.com/lydell/resolve-url#deprecated
+npm WARN deprecated source-map-url@0.4.1: See https://github.com/lydell/source-map-url#deprecated
+npm WARN lifecycle The node binary used for scripts is /tmp/yarn--1669954078801-0.9414866942507061/node but npm is using /usr/bin/node itself. Use the `--scripts-prepend-node-path` option to include the path for the node binary npm was executed with.
+
+> ejs@2.7.4 postinstall /extbin/npm/globals/lib/node_modules/@uicard-dk-bas/generator-sap-ws-template/node_modules/yeoman-environment/node_modules/ejs
+> node ./postinstall.js
+
+Thank you for installing [35mEJS[0m: built with the [32mJake[0m JavaScript build tool ([32mhttps://jakejs.com/[0m)
+
++ @uicard-dk-bas/generator-sap-ws-template@1.3.1
+added 454 packages from 411 contributors in 9.88s
+RETRY - Failed to install the @sapdmz/generator-html5-project module during the first try. Trying to reinstall it separately.
+npm install --prefix /extbin/npm/globals -g @sapdmz/generator-html5-project@0.1.0
+npm WARN notsup Unsupported engine for @sapdmz/generator-html5-project@0.1.0: wanted: {"npm":">= 8.0.0"} (current: {"node":"14.21.0","npm":"6.14.17"})
+npm WARN notsup Not compatible with your version of node/npm: @sapdmz/generator-html5-project@0.1.0
+
+npm ERR! code E404
+npm ERR! 404 Not Found - GET https://registry.yarnpkg.com/generator-deployer - Not found
+npm ERR! 404 
+npm ERR! 404  'generator-deployer@0.4.1' is not in the npm registry.
+npm ERR! 404 You should bug the author to publish it (or use the name yourself!)
+npm ERR! 404 It was specified as a dependency of '@sapdmz/generator-html5-project'
+npm ERR! 404 
+npm ERR! 404 Note that you can also install from a
+npm ERR! 404 tarball, folder, http url, or git url.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/user/.npm/_logs/2022-12-02T04_13_49_005Z-debug.log
+FW ERROR: Failed to install the @sapdmz/generator-html5-project@0.1.0 module.
+RETRY - Failed to install the @sapdmz/generator-vue-module module during the first try. Trying to reinstall it separately.
+npm install --prefix /extbin/npm/globals -g @sapdmz/generator-vue-module@0.0.27
+npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+npm WARN deprecated querystring@0.2.0: The querystring API is considered Legacy. new code should use the URLSearchParams API instead.
+npm WARN deprecated har-validator@5.1.5: this library is no longer supported
+npm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm WARN deprecated request@2.88.0: request has been deprecated, see https://github.com/request/request/issues/3142
+npm WARN deprecated streamroller@2.2.3: 2.x is no longer supported. Please upgrade to 3.x or higher.
+npm WARN deprecated date-format@2.1.0: 2.x is no longer supported. Please upgrade to 4.x or higher.
+npm WARN lifecycle The node binary used for scripts is /tmp/yarn--1669954078801-0.9414866942507061/node but npm is using /usr/bin/node itself. Use the `--scripts-prepend-node-path` option to include the path for the node binary npm was executed with.
+
+> fast-xml-parser@3.16.0 postinstall /extbin/npm/globals/lib/node_modules/@sapdmz/generator-vue-module/node_modules/fast-xml-parser
+> node tasks/postinstall.js || exit 0
+
+[96m[1mLove fast-xml-parser? Check [32mhttps://amitkumargupta.work [96m[1mfor more projects and contribution.[0m
+
++ @sapdmz/generator-vue-module@0.0.27
+added 242 packages from 248 contributors in 9.877s
+RETRY - Failed to install the @sapdmz/generator-html5-module module during the first try. Trying to reinstall it separately.
+npm install --prefix /extbin/npm/globals -g @sapdmz/generator-html5-module@0.0.18
+npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+npm WARN deprecated querystring@0.2.0: The querystring API is considered Legacy. new code should use the URLSearchParams API instead.
+npm WARN deprecated har-validator@5.1.5: this library is no longer supported
+npm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm WARN deprecated streamroller@2.2.3: 2.x is no longer supported. Please upgrade to 3.x or higher.
+npm WARN deprecated date-format@2.1.0: 2.x is no longer supported. Please upgrade to 4.x or higher.
++ @sapdmz/generator-html5-module@0.0.18
+added 234 packages from 243 contributors in 9.539s
+RETRY - Failed to install the @sapdmz/generator-reactjs-module module during the first try. Trying to reinstall it separately.
+npm install --prefix /extbin/npm/globals -g @sapdmz/generator-reactjs-module@0.0.22
+npm WARN deprecated querystring@0.2.0: The querystring API is considered Legacy. new code should use the URLSearchParams API instead.
+npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+npm WARN deprecated har-validator@5.1.5: this library is no longer supported
+npm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm WARN deprecated request@2.88.0: request has been deprecated, see https://github.com/request/request/issues/3142
+npm WARN deprecated streamroller@2.2.3: 2.x is no longer supported. Please upgrade to 3.x or higher.
+npm WARN deprecated date-format@2.1.0: 2.x is no longer supported. Please upgrade to 4.x or higher.
+npm WARN deprecated source-map-resolve@0.5.3: See https://github.com/lydell/source-map-resolve#deprecated
+npm WARN deprecated resolve-url@0.2.1: https://github.com/lydell/resolve-url#deprecated
+npm WARN deprecated source-map-url@0.4.1: See https://github.com/lydell/source-map-url#deprecated
+npm WARN deprecated urix@0.1.0: Please see https://github.com/lydell/urix#deprecated
+npm WARN lifecycle The node binary used for scripts is /tmp/yarn--1669954078801-0.9414866942507061/node but npm is using /usr/bin/node itself. Use the `--scripts-prepend-node-path` option to include the path for the node binary npm was executed with.
+
+> ejs@2.7.4 postinstall /extbin/npm/globals/lib/node_modules/@sapdmz/generator-reactjs-module/node_modules/ejs
+> node ./postinstall.js
+
+Thank you for installing [35mEJS[0m: built with the [32mJake[0m JavaScript build tool ([32mhttps://jakejs.com/[0m)
+
+
+> fast-xml-parser@3.16.0 postinstall /extbin/npm/globals/lib/node_modules/@sapdmz/generator-reactjs-module/node_modules/fast-xml-parser
+> node tasks/postinstall.js || exit 0
+
+[96m[1mLove fast-xml-parser? Check [32mhttps://amitkumargupta.work [96m[1mfor more projects and contribution.[0m
+
++ @sapdmz/generator-reactjs-module@0.0.22
+added 481 packages from 430 contributors in 14.336s
+Installation summary of Yeoman generators, global npm packages, VS Code extensions, and CLIs:
+Installation summary of the "ext-hana-tools-trial/hana-tools" extension (created by "SAP(HAN-BAS)"):
+    The @sap/hana-theme-vscode VS Code extension was installed successfully.
+    The @sap/hrtt-core-vscode VS Code extension was installed successfully.
+    The @sap/hana-sqlscript-lsp VS Code extension was installed successfully.
+    The @sap/hana-project-explorer VS Code extension was installed successfully.
+    The @sap/generator-add-hdb-module node module was installed successfully.
+    The @sap/generator-hdb-project node module was installed successfully.
+Installation summary of the "ext-portalwingtrial/launchpad-module" extension (created by "extension author"):
+    The @sapflp/flp-editors VS Code extension was installed successfully.
+    The @sapflp/flp-editors VS Code extension signature was validated successfully.
+    The @sapflp/generator-launchpad-module node module was installed successfully.
+Installation summary of the "java-dev-tools/java-dev-tools" extension:
+    The @devx-wing/vscode-java-run VS Code extension was installed successfully.
+    The @devx-wing/vscode-java-run VS Code extension signature was validated successfully.
+    The @devx-wing/vscode-java-dependency VS Code extension was installed successfully.
+    The @devx-wing/vscode-java-dependency VS Code extension signature was validated successfully.
+    The @devx-wing/vscode-java-debug VS Code extension was installed successfully.
+    The @devx-wing/vscode-java-debug VS Code extension signature was validated successfully.
+    The @devx-wing/vscode-java-test VS Code extension was installed successfully.
+    The @devx-wing/vscode-java-test VS Code extension signature was validated successfully.
+    The @devx-wing/vscode-spring-boot-tools VS Code extension was installed successfully.
+    The @devx-wing/vscode-spring-boot-tools VS Code extension signature was validated successfully.
+    The @devx-wing/vscode-redhat-java VS Code extension was installed successfully.
+    The @devx-wing/vscode-redhat-java VS Code extension signature was validated successfully.
+Installation summary of the "vscode-mta-editor/vscode-mta-editor" extension:
+    The @bas-dev/vscode-mta-editor VS Code extension was installed successfully.
+    The @bas-dev/vscode-mta-editor VS Code extension signature was validated successfully.
+Installation summary of the "ext-bpm-workflow-trial/workflow" extension (created by "SAP(LOD-BPM-WFS)"):
+    The @workflow/form-editor-vscode VS Code extension was installed successfully.
+    The @workflow/form-editor-vscode VS Code extension signature was validated successfully.
+    The @workflow/workflow-editor-vscode VS Code extension was installed successfully.
+    The @workflow/workflow-editor-vscode VS Code extension signature was validated successfully.
+    The @workflow/generator-workflow-module node module was installed successfully.
+    The @workflow/generator-workflow-sample node module was installed successfully.
+Installation summary of the "ext-hana-tools-trial/smart-data-integration-tools" extension (created by "SAP(HAN-BAS-SDI)"):
+    The @sap/hana-eim-sditools-vscode VS Code extension was installed successfully.
+Installation summary of the "ext-hana-tools-trial/hana-calculation-view-editor-base" extension (created by "SAP(HAN-BAS-EDT-MOD)"):
+    The @sap/webide-hdi-base-feature-vscode VS Code extension was installed successfully.
+Installation summary of the "ext-bpm-workflow-trial/process-template" extension (created by "SAP(LOD-BPM-WFS)"):
+    The @workflow/process-template-editor-vscode VS Code extension was installed successfully.
+    The @workflow/process-template-editor-vscode VS Code extension signature was validated successfully.
+Installation summary of the "ext-cdstoolsbastrial/cds-bas-extension" extension (created by "SAP(HAN-WDE-EDT-CDS)"):
+    The @sap/vscode-cds VS Code extension was installed successfully.
+    The @sap/generator-cap-project node module was installed successfully.
+    The @sap/cds-dk node module was installed successfully.
+Installation summary of the " html5-runner/html5-runner" extension:
+    The @sapdmz/vscode-wing-ui5-run VS Code extension was installed successfully.
+    The @sapdmz/vscode-wing-ui5-run VS Code extension signature was validated successfully.
+Installation summary of the "ext-mckbj-trial/development-productivity-tools" extension (created by "SAP(MOB-MDE-MDK)"):
+    The @sap-lcnc/guided-development VS Code extension was installed successfully.
+    The @sap-lcnc/guided-development VS Code extension signature was validated successfully.
+    The @sap-lcnc/run-config VS Code extension was installed successfully.
+    The @sap-lcnc/run-config VS Code extension signature was validated successfully.
+Installation summary of the "ext-mckbj-trial/cds-modeller" extension (created by "SAP(MOB-MDE-MBG)"):
+    The @sap-cds/cds-editor-vscbas VS Code extension was installed successfully.
+    The @sap-cds/cds-editor-vscbas VS Code extension signature was validated successfully.
+Installation summary of the "ext-mckbj-trial/uicard-dk-bas" extension (created by "SAP(EP-BWP-BAS-UIC)"):
+    The @uicard-dk-bas/uicard-dk VS Code extension was installed successfully.
+    The @uicard-dk-bas/uicard-dk VS Code extension signature was validated successfully.
+    The @uicard-dk-bas/generator-sap-uicard node module was installed successfully.
+    The @uicard-dk-bas/generator-sap-mtb-uicard node module was installed successfully.
+    The @uicard-dk-bas/generator-sap-contentpackage node module was installed successfully.
+    The @uicard-dk-bas/generator-sap-ws-template node module was installed successfully.
+Installation summary of the "ext-hana-tools-trial/hana-calculation-view-editor" extension (created by "SAP(HAN-BAS-EDT-MOD)"):
+    The @sap/webide-hdi-feature-vscode VS Code extension was installed successfully.
+Installation summary of the "ext-sap-ux-trial/sap-ux-all-extensions" extension (created by "SAP(CA-UX-IDE)"):
+    The @sap-ux-rel/sap-ux-service-modeler-extension VS Code extension was installed successfully.
+    The @sap-ux-rel/sap-ux-service-modeler-extension VS Code extension signature was validated successfully.
+    The @sap-ux-rel/sap-ux-annotation-modeler-extension VS Code extension was installed successfully.
+    The @sap-ux-rel/sap-ux-annotation-modeler-extension VS Code extension signature was validated successfully.
+    The @sap-ux-rel/sap-ux-application-modeler-extension VS Code extension was installed successfully.
+    The @sap-ux-rel/sap-ux-application-modeler-extension VS Code extension signature was validated successfully.
+    The @sap-ux-rel/sap-ux-help-extension VS Code extension was installed successfully.
+    The @sap-ux-rel/sap-ux-help-extension VS Code extension signature was validated successfully.
+    The @sap/generator-fiori node module was installed successfully.
+Installation summary of the "w5g-wing/w5g-wing" extension:
+    The @bas-dev/vscode-w5g VS Code extension was installed successfully.
+    The @bas-dev/vscode-w5g VS Code extension signature was validated successfully.
+Installation summary of the "ext-adaptation-project-trial/adaptation-project" extension (created by "SAP(CA-UI5-FL-ADP-BAS)"):
+    The @sap/ui5-visual-editor VS Code extension was installed successfully.
+    The @sap/ui5-visual-editor VS Code extension signature was validated successfully.
+    The @sap/generator-adaptation-project node module was installed successfully.
+    The @sap/generator-adaptation-project-deployment node module was installed successfully.
+Installation summary of the "ext-hana-tools-trial/hana-performance-tools" extension (created by "SAP(HAN-BAS-SA)"):
+    The @sap/hana-performance-tools VS Code extension was installed successfully.
+Installation summary of the "ext-hana-tools-trial/hana-runtime-tools" extension (created by "SAP(HAN-BAS)"):
+    The @sap/hana-database-explorer VS Code extension was installed successfully.
+Installation summary of the "ext-devxmonaco-trial/wex" extension (created by "SAP(CA-BAS)"):
+    The @sapse/business-application-studio-extension-management node module was installed successfully.
+Installation summary of the "html5-templates/html5-templates" extension:
+    The @sapdmz/generator-html5-project failed to install.
+    The @sapdmz/generator-vue-module node module was installed successfully.
+    The @sapdmz/generator-html5-module node module was installed successfully.
+    The @sapdmz/generator-reactjs-module node module was installed successfully.
+Finished installing App Studio simple extensions components!
+Total install time: 386203 milliseconds
+
+
+START INSTALLATION OF NON SAP EXTENSIONS

@@ -1,0 +1,82 @@
+{
+  "label": "@ui5-language-assistant/language-server",
+  "level": "error",
+  "message": "Could not read version information",
+  "time": "2022-12-02T05:10:18.487Z",
+  "url": "https://ui5.sap.com/1.50.0/resources/sap-ui-version.json"
+}
+{
+  "label": "@ui5-language-assistant/language-server",
+  "level": "error",
+  "message": "Could not read version information",
+  "time": "2022-12-02T05:10:18.762Z",
+  "url": "https://ui5.sap.com/1.50.0/resources/sap-ui-version.json"
+}
+Unknown type: sap.m.IToolbarInteractiveControl [SAPUI5:1.71.53]
+sap.m.IToolbarInteractiveControl is a UnresolvedType and not an interface (class sap.m.Breadcrumbs implements it) [SAPUI5:1.71.53]
+Unknown type: sap.m.IToolbarInteractiveControl [SAPUI5:1.71.53]
+sap.m.IToolbarInteractiveControl is a UnresolvedType and not an interface (class sap.m.Button implements it) [SAPUI5:1.71.53]
+Unknown type: sap.m.IToolbarInteractiveControl [SAPUI5:1.71.53]
+sap.m.IToolbarInteractiveControl is a UnresolvedType and not an interface (class sap.m.CheckBox implements it) [SAPUI5:1.71.53]
+Unknown type: sap.m.IToolbarInteractiveControl [SAPUI5:1.71.53]
+sap.m.IToolbarInteractiveControl is a UnresolvedType and not an interface (class sap.m.ComboBox implements it) [SAPUI5:1.71.53]
+Unknown type: sap.m.IToolbarInteractiveControl [SAPUI5:1.71.53]
+sap.m.IToolbarInteractiveControl is a UnresolvedType and not an interface (class sap.m.DateTimeInput implements it) [SAPUI5:1.71.53]
+Unknown type: sap.m.IToolbarInteractiveControl [SAPUI5:1.71.53]
+sap.m.IToolbarInteractiveControl is a UnresolvedType and not an interface (class sap.m.GenericTag implements it) [SAPUI5:1.71.53]
+Unknown type: sap.m.IToolbarInteractiveControl [SAPUI5:1.71.53]
+sap.m.IToolbarInteractiveControl is a UnresolvedType and not an interface (class sap.m.Input implements it) [SAPUI5:1.71.53]
+Unknown type: sap.m.IToolbarInteractiveControl [SAPUI5:1.71.53]
+sap.m.IToolbarInteractiveControl is a UnresolvedType and not an interface (class sap.m.Label implements it) [SAPUI5:1.71.53]
+Unknown type: sap.m.IToolbarInteractiveControl [SAPUI5:1.71.53]
+sap.m.IToolbarInteractiveControl is a UnresolvedType and not an interface (class sap.m.Link implements it) [SAPUI5:1.71.53]
+Unknown type: sap.m.IToolbarInteractiveControl [SAPUI5:1.71.53]
+sap.m.IToolbarInteractiveControl is a UnresolvedType and not an interface (class sap.m.MenuButton implements it) [SAPUI5:1.71.53]
+Unknown type: sap.m.IToolbarInteractiveControl [SAPUI5:1.71.53]
+sap.m.IToolbarInteractiveControl is a UnresolvedType and not an interface (class sap.m.OverflowToolbarButton implements it) [SAPUI5:1.71.53]
+Unknown type: sap.m.IToolbarInteractiveControl [SAPUI5:1.71.53]
+sap.m.IToolbarInteractiveControl is a UnresolvedType and not an interface (class sap.m.RadioButton implements it) [SAPUI5:1.71.53]
+Unknown type: sap.m.IToolbarInteractiveControl [SAPUI5:1.71.53]
+sap.m.IToolbarInteractiveControl is a UnresolvedType and not an interface (class sap.m.SearchField implements it) [SAPUI5:1.71.53]
+Unknown type: sap.m.IToolbarInteractiveControl [SAPUI5:1.71.53]
+sap.m.IToolbarInteractiveControl is a UnresolvedType and not an interface (class sap.m.SegmentedButton implements it) [SAPUI5:1.71.53]
+Unknown type: sap.m.IToolbarInteractiveControl [SAPUI5:1.71.53]
+sap.m.IToolbarInteractiveControl is a UnresolvedType and not an interface (class sap.m.Select implements it) [SAPUI5:1.71.53]
+Unknown type: sap.m.IToolbarInteractiveControl [SAPUI5:1.71.53]
+sap.m.IToolbarInteractiveControl is a UnresolvedType and not an interface (class sap.m.SplitButton implements it) [SAPUI5:1.71.53]
+Unknown type: sap.m.IToolbarInteractiveControl [SAPUI5:1.71.53]
+sap.m.IToolbarInteractiveControl is a UnresolvedType and not an interface (class sap.m.Switch implements it) [SAPUI5:1.71.53]
+Unknown type: sap.m.IToolbarInteractiveControl [SAPUI5:1.71.53]
+sap.m.IToolbarInteractiveControl is a UnresolvedType and not an interface (class sap.m.Text implements it) [SAPUI5:1.71.53]
+Unknown type: sap.m.IToolbarInteractiveControl [SAPUI5:1.71.53]
+sap.m.IToolbarInteractiveControl is a UnresolvedType and not an interface (class sap.m.Title implements it) [SAPUI5:1.71.53]
+Unknown type: sap.m.IToolbarInteractiveControl [SAPUI5:1.71.53]
+sap.m.IToolbarInteractiveControl is a UnresolvedType and not an interface (class sap.m.ToggleButton implements it) [SAPUI5:1.71.53]
+{
+  "error": 204,
+  "label": "@ui5-language-assistant/language-server",
+  "level": "error",
+  "message": "Failure during SWA tracking",
+  "time": "2022-12-02T05:14:25.682Z"
+}
+{
+  "error": 204,
+  "label": "@ui5-language-assistant/language-server",
+  "level": "error",
+  "message": "Failure during SWA tracking",
+  "time": "2022-12-02T05:19:06.461Z"
+}
+{
+  "error": 204,
+  "label": "@ui5-language-assistant/language-server",
+  "level": "error",
+  "message": "Failure during SWA tracking",
+  "time": "2022-12-02T05:19:41.162Z"
+}
+{
+  "error": 204,
+  "label": "@ui5-language-assistant/language-server",
+  "level": "error",
+  "message": "Failure during SWA tracking",
+  "time": "2022-12-02T05:21:04.932Z"
+}

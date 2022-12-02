@@ -1,0 +1,59 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.conductor.controller.Iconos2" xmlns:uxap="sap.uxap" xmlns="sap.m">
+    <uxap:ObjectPageLayout showTitleInHeaderContent="false" showHeaderContent="true" showEditHeaderButton="false" showFooter="false" class="sapUiSizeCompact">
+        <uxap:headerTitle>
+            <uxap:ObjectPageHeader objectTitle="¿Hacia donde se dirige?" objectSubtitle="" isObjectIconAlwaysVisible="false" isObjectTitleAlwaysVisible="true" isObjectSubtitleAlwaysVisible="true" showPlaceholder="true" objectImageURI="/webapp/resources/Cerro_Azul.png">
+                <uxap:navigationBar>
+                    <Bar>
+                        <contentLeft>
+                            <Button type="Back" press="_onFioriObjectPageHeaderPress"/>
+                        </contentLeft>
+                        <contentMiddle>
+                            <Title text="Pagina de Inicio"/>
+                        </contentMiddle>
+                        <contentRight/>
+                    </Bar>
+                </uxap:navigationBar>
+                <uxap:actions/>
+                <uxap:breadCrumbsLinks/>
+            </uxap:ObjectPageHeader>
+        </uxap:headerTitle>
+        <uxap:headerContent>
+            <VBox>
+                <items>
+                    <Image src="/webapp/resources/Cerro_Azul.png" class="sapUxAPObjectPageHeaderObjectImage sapSmartTemplatesObjectPageHeaderImage" width="6rem" height="6rem" visible="true"/>
+                </items>
+            </VBox>
+        </uxap:headerContent>
+        <uxap:sections>
+            <uxap:ObjectPageSection title="Durante el Viaje">
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection title="Durante el Viaje">
+                        <uxap:blocks>
+                            <Image src="/webapp/resources/KPI_Analysis.png" height="300px" width="300px" visible="true" densityAware="false" press="_onImagePress"/>
+                            <Image src="/webapp/resources/Legalize_Payment.png" height="300px" width="300px" visible="true" densityAware="false" press="_onImagePress1"/>
+                            <Image src="/webapp/resources/Truck.png" height="300px" width="400px" visible="true" densityAware="false" press="_onImagePress2"/>
+                        </uxap:blocks>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+            </uxap:ObjectPageSection>
+            <uxap:ObjectPageSection title="Todos los viajes">
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection title="Todos los viajes">
+                        <uxap:blocks>
+                            <Image src="/webapp/resources/Trucks_2_.png" height="450px" width="1200px" visible="true" densityAware="false" press="_onImagePress3"/>
+                        </uxap:blocks>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+            </uxap:ObjectPageSection>
+        </uxap:sections>
+        <uxap:footer>
+            <OverflowToolbar design="auto">
+                <content>
+                    <ToolbarSpacer/>
+                    <Button text="Save" type="Emphasized" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                    <Button text="Cancel" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                </content>
+            </OverflowToolbar>
+        </uxap:footer>
+    </uxap:ObjectPageLayout>
+</mvc:View>

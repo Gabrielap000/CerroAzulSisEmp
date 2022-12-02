@@ -1,0 +1,106 @@
+[1669957811710] INFO  (ext): SQLTools is starting
+[1669957811715] INFO  (ext): initializing language client...
+[1669957812038] INFO  (ext): Registering client for languages [{"scheme":"sqltools"},{"language":"sql","scheme":"untitled"},{"language":"sql","scheme":"file"},{"language":"sql","scheme":"sqltools"}]
+    ns: "lc"
+[1669957812200] INFO  (ext): loading plugins...
+[1669957812201] INFO  (ext): registering Formatter Plugin.
+    plugin: {
+      "name": "Formatter Plugin"
+    }
+[1669957812201] INFO  (ext): registering Connection Manager Plugin.
+    plugin: {
+      "name": "Connection Manager Plugin"
+    }
+[1669957812202] INFO  (ext): registering CodeLens Plugin.
+    plugin: {
+      "name": "CodeLens Plugin",
+      "registeredLanguages": []
+    }
+[1669957812203] INFO  (ext): registering Dependency Manager Plugin.
+    plugin: {
+      "name": "Dependency Manager Plugin",
+      "installingDrivers": []
+    }
+[1669957812205] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1669957812205] INFO  (ext): registering History Manager Plugin.
+    plugin: {
+      "name": "History Manager Plugin"
+    }
+[1669957812206] INFO  (ext): registering Bookmarks Manager Plugin.
+    plugin: {
+      "name": "Bookmarks Manager Plugin"
+    }
+[1669957812209] INFO  (ext): SQLTools activation completed. 498.687328 ms
+[1669957812210] INFO  (ext): Formatter Plugin registered!
+[1669957812210] INFO  (ext): CodeLens Plugin registered!
+[1669957812210] INFO  (ext): Dependency Manager Plugin registered!
+[1669957812211] INFO  (ext): Connection Manager Plugin registered!
+[1669957812211] INFO  (ext): History Manager Plugin registered!
+[1669957812211] INFO  (ext): Bookmarks Manager Plugin registered!
+[1669957815813] INFO  (ext): EXECUTING COMMAND => sqltools.refreshTree
+[1669957815814] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1669957816083] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1669957816160] INFO  (ls): SQLTools Server started!
+===============================
+Using node runtime?: yes
+ExecPath: /opt/nodejs/node-v16.11.1-linux-x64/bin/node v16.11.1
+===============================
+[1669957816165] INFO  (ls): User defined env vars
+===============================
+{"PATH":"/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/user/.node_modules_global/bin"}
+===============================:
+[1669957817834] INFO  (ext): LanguageClient ready
+    ns: "lc"
+[1669957817931] INFO  (ls): Initialized with node version:v16.11.1
+[1669957819441] INFO  (ext): registering SQLite Plugin (driver).
+    plugin: {
+      "extensionId": "mtxr.sqltools-driver-sqlite",
+      "name": "SQLite Plugin",
+      "type": "driver"
+    }
+[1669957819449] INFO  (ls): REQUEST RECEIVED => ls/RegisterPlugin
+[1669957819450] INFO  (ls): request to register plugin: "/extbin/local/openvscode-server/extensions/sqltools-driver-sqlite-0.4.0/out/ls/plugin.js"
+[1669957819776] INFO  (ls): Driver sqlite registered!
+    place: "driver-map"
+    ns: "ls-context"
+[1669957819878] INFO  (ext): SQLite Plugin (driver) registered!
+[1669957820380] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1669957820836] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1669957820904] INFO  (ext): EXECUTING COMMAND => sqltools.refreshTree
+[1669957820905] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1669957820980] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1669957826323] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1669957995706] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1669958000610] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1669958021031] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1669958042219] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1669958057399] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1669958064297] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1669958118177] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1669958118831] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1669958119657] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1669958139669] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1669958152990] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1669958330519] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1669958345606] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"

@@ -1,0 +1,7 @@
+Activating 'vscode-spring-boot' extension
+Found java exe: /home/user/java11/bin/java
+isJavaEightOrHigher => true
+Redirecting server logs to /dev/null
+ERR: Disabling server log output. No more output will be sent after this.
+
+Child process connected on port 45556

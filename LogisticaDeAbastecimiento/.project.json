@@ -1,0 +1,25 @@
+{
+    "dataBinding": {
+        "/webapp/view/Principal.view.xml": {
+            "entitySet": "/ConductoresSet"
+        }, 
+        "/webapp/view/Analisis.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/InformacionTrayecto.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/Legalizacion.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/Conductores.view.xml": {
+            "entitySet": "/ConductoresSet"
+        }, 
+        "/webapp/view/AnalysisKpi.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/Page7.view.xml": {
+            "entitySet": ""
+        } 
+    }
+}

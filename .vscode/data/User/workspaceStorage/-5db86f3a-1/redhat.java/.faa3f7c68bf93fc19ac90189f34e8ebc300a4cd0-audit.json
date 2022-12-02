@@ -1,0 +1,14 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 2
+    },
+    "auditLog": "/home/user/.vscode/data/User/workspaceStorage/-5db86f3a-1/redhat.java/.faa3f7c68bf93fc19ac90189f34e8ebc300a4cd0-audit.json",
+    "files": [
+        {
+            "date": 1669957084456,
+            "name": "/home/user/.vscode/data/User/workspaceStorage/-5db86f3a-1/redhat.java/client.log.2022-12-02",
+            "hash": "024fe7498081f782f1a6e4aee5ca1ec0"
+        }
+    ]
+}

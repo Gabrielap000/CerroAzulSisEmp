@@ -1,0 +1,29 @@
+cds-lsp is being stopped by client...
+	at CdsLanguageClient.stop (/extbin/local/openvscode-server/extensions/vscode-cds-6.3.0/lib/src/LanguageClientProvider.js:67:3)
+	at W.<anonymous> (/extbin/local/openvscode-server/extensions/vscode-cds-6.3.0/node_modules/vscode-languageclient/lib/common/client.js:2172:22)
+	at W.dispose (/extbin/local/openvscode-server/out/vs/workbench/api/node/extensionHostProcess.js:78:99878)
+	at w (/extbin/local/openvscode-server/out/vs/workbench/api/node/extensionHostProcess.js:10:12344)
+	at b._deactivate (/extbin/local/openvscode-server/out/vs/workbench/api/node/extensionHostProcess.js:97:13484)
+	at /extbin/local/openvscode-server/out/vs/workbench/api/node/extensionHostProcess.js:97:10641
+	at Array.map (<anonymous>)
+	at b._deactivateAll (/extbin/local/openvscode-server/out/vs/workbench/api/node/extensionHostProcess.js:97:10628)
+	at b.terminate (/extbin/local/openvscode-server/out/vs/workbench/api/node/extensionHostProcess.js:97:11012)
+	at b.terminate (/extbin/local/openvscode-server/out/vs/workbench/api/node/extensionHostProcess.js:101:620)
+	at m (/extbin/local/openvscode-server/out/vs/workbench/api/node/extensionHostProcess.js:111:19088)
+	at /extbin/local/openvscode-server/out/vs/workbench/api/node/extensionHostProcess.js:111:17016
+	at b.invoke (/extbin/local/openvscode-server/out/vs/workbench/api/node/extensionHostProcess.js:61:145)
+	at p.deliver (/extbin/local/openvscode-server/out/vs/workbench/api/node/extensionHostProcess.js:61:2266)
+	at v.fire (/extbin/local/openvscode-server/out/vs/workbench/api/node/extensionHostProcess.js:61:1844)
+	at a.fire (/extbin/local/openvscode-server/out/vs/workbench/api/node/extensionHostProcess.js:69:19042)
+	at r._receiveMessage (/extbin/local/openvscode-server/out/vs/workbench/api/node/extensionHostProcess.js:69:23854)
+	at /extbin/local/openvscode-server/out/vs/workbench/api/node/extensionHostProcess.js:69:21224
+	at b.invoke (/extbin/local/openvscode-server/out/vs/workbench/api/node/extensionHostProcess.js:61:145)
+	at p.deliver (/extbin/local/openvscode-server/out/vs/workbench/api/node/extensionHostProcess.js:61:2266)
+	at v.fire (/extbin/local/openvscode-server/out/vs/workbench/api/node/extensionHostProcess.js:61:1844)
+	at v.acceptChunk (/extbin/local/openvscode-server/out/vs/workbench/api/node/extensionHostProcess.js:69:15873)
+	at /extbin/local/openvscode-server/out/vs/workbench/api/node/extensionHostProcess.js:69:15003
+	at b.invoke (/extbin/local/openvscode-server/out/vs/workbench/api/node/extensionHostProcess.js:61:145)
+	at p.deliver (/extbin/local/openvscode-server/out/vs/workbench/api/node/extensionHostProcess.js:61:2266)
+	at v.fire (/extbin/local/openvscode-server/out/vs/workbench/api/node/extensionHostProcess.js:61:1844)
+	at v._processReadQueue (/extbin/local/openvscode-server/out/vs/workbench/api/node/extensionHostProcess.js:69:34245)
+

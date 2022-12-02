@@ -1,0 +1,22 @@
+{
+    "dataBinding": {
+        "/webapp/view/Iconos.view.xml": {
+            "entitySet": "/TrayectosSet"
+        }, 
+        "/webapp/view/PaginaDeInicio.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/Legalizacion.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/Kpi.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/Trayectorias.view.xml": {
+            "entitySet": "/TrayectosSet"
+        }, 
+        "/webapp/view/Iconos2.view.xml": {
+            "entitySet": ""
+        } 
+    }
+}

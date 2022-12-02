@@ -1,0 +1,49 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.logisticaDeAbastecimiento.controller.Page7" xmlns:uxap="sap.uxap" xmlns="sap.m">
+    <uxap:ObjectPageLayout showTitleInHeaderContent="false" showHeaderContent="true" showEditHeaderButton="false" showFooter="true" class="sapUiSizeCompact">
+        <uxap:headerTitle>
+            <uxap:ObjectPageHeader objectTitle="Cerro Azul - La Morichera" objectSubtitle="" isObjectIconAlwaysVisible="false" isObjectTitleAlwaysVisible="true" isObjectSubtitleAlwaysVisible="true" showPlaceholder="true" objectImageURI="/webapp/resources/Cerro_Azul.png">
+                <uxap:navigationBar>
+                    <Bar>
+                        <contentLeft>
+                            <Button type="Back" press="_onFioriObjectPageHeaderPress"/>
+                        </contentLeft>
+                        <contentMiddle>
+                            <Title text="Pagina de Inicio"/>
+                        </contentMiddle>
+                        <contentRight/>
+                    </Bar>
+                </uxap:navigationBar>
+                <uxap:actions/>
+                <uxap:breadCrumbsLinks/>
+            </uxap:ObjectPageHeader>
+        </uxap:headerTitle>
+        <uxap:headerContent>
+            <VBox>
+                <items>
+                    <Image src="/webapp/resources/Cerro_Azul.png" class="sapUxAPObjectPageHeaderObjectImage sapSmartTemplatesObjectPageHeaderImage" width="6rem" height="6rem" visible="true"/>
+                </items>
+            </VBox>
+        </uxap:headerContent>
+        <uxap:sections>
+            <uxap:ObjectPageSection title="¿A donde se dirige?">
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection title="¿A donde se dirige?">
+                        <uxap:blocks>
+                            <Image src="/webapp/resources/Analysis.png" height="200px" width="200px" visible="true" densityAware="false" press="_onImagePress"/>
+                            <Image src="/webapp/resources/Truck.png" height="200px" width="200px" visible="true" densityAware="false" press="_onImagePress1"/>
+                            <Image src="/webapp/resources/Conductores.png" height="200px" width="200px" visible="true" densityAware="false" press="_onImagePress2"/>
+                            <Image src="/webapp/resources/KPI_Analysis.png" height="200px" width="200px" visible="true" densityAware="false" press="_onImagePress3"/>
+                        </uxap:blocks>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+            </uxap:ObjectPageSection>
+        </uxap:sections>
+        <uxap:footer>
+            <OverflowToolbar design="auto">
+                <content>
+                    <ToolbarSpacer/>
+                </content>
+            </OverflowToolbar>
+        </uxap:footer>
+    </uxap:ObjectPageLayout>
+</mvc:View>

@@ -1,0 +1,159 @@
+{
+  "label": "@ui5-language-assistant/language-server",
+  "level": "error",
+  "message": "Could not read version information",
+  "time": "2022-12-02T04:17:47.697Z",
+  "url": "https://ui5.sap.com/1.50.0/resources/sap-ui-version.json"
+}
+{
+  "label": "@ui5-language-assistant/language-server",
+  "level": "error",
+  "message": "Could not read version information",
+  "time": "2022-12-02T04:17:47.946Z",
+  "url": "https://ui5.sap.com/1.50.0/resources/sap-ui-version.json"
+}
+{
+  "label": "@ui5-language-assistant/language-server",
+  "level": "error",
+  "message": "Could not find UI5 lib from",
+  "time": "2022-12-02T04:17:48.330Z",
+  "url": "https://ui5.sap.com/1.71.53/test-resources/themelib_sap_bluecrystal/designtime/api.json"
+}
+{
+  "label": "@ui5-language-assistant/language-server",
+  "level": "error",
+  "message": "Could not find UI5 lib from",
+  "time": "2022-12-02T04:17:48.335Z",
+  "url": "https://ui5.sap.com/1.71.53/test-resources/sap/ushell_abap/designtime/api.json"
+}
+{
+  "label": "@ui5-language-assistant/language-server",
+  "level": "error",
+  "message": "Could not find UI5 lib from",
+  "time": "2022-12-02T04:17:48.337Z",
+  "url": "https://ui5.sap.com/1.71.53/test-resources/sap/ui/demoapps/designtime/api.json"
+}
+{
+  "label": "@ui5-language-assistant/language-server",
+  "level": "error",
+  "message": "Could not find UI5 lib from",
+  "time": "2022-12-02T04:17:48.344Z",
+  "url": "https://ui5.sap.com/1.71.53/test-resources/sap/ui/server/java/designtime/api.json"
+}
+{
+  "label": "@ui5-language-assistant/language-server",
+  "level": "error",
+  "message": "Could not find UI5 lib from",
+  "time": "2022-12-02T04:17:48.366Z",
+  "url": "https://ui5.sap.com/1.71.53/test-resources/sap/fiori/designtime/api.json"
+}
+{
+  "label": "@ui5-language-assistant/language-server",
+  "level": "error",
+  "message": "Could not find UI5 lib from",
+  "time": "2022-12-02T04:17:48.368Z",
+  "url": "https://ui5.sap.com/1.71.53/test-resources/sap/fileviewer/designtime/api.json"
+}
+{
+  "label": "@ui5-language-assistant/language-server",
+  "level": "error",
+  "message": "Could not find UI5 lib from",
+  "time": "2022-12-02T04:17:48.371Z",
+  "url": "https://ui5.sap.com/1.71.53/test-resources/sap/zen/crosstab/designtime/api.json"
+}
+{
+  "label": "@ui5-language-assistant/language-server",
+  "level": "error",
+  "message": "Could not find UI5 lib from",
+  "time": "2022-12-02T04:17:48.372Z",
+  "url": "https://ui5.sap.com/1.71.53/test-resources/sap/zen/dsh/designtime/api.json"
+}
+{
+  "label": "@ui5-language-assistant/language-server",
+  "level": "error",
+  "message": "Could not find UI5 lib from",
+  "time": "2022-12-02T04:17:48.374Z",
+  "url": "https://ui5.sap.com/1.71.53/test-resources/themelib_sap_belize/designtime/api.json"
+}
+{
+  "label": "@ui5-language-assistant/language-server",
+  "level": "error",
+  "message": "Could not find UI5 lib from",
+  "time": "2022-12-02T04:17:48.431Z",
+  "url": "https://ui5.sap.com/1.71.53/test-resources/themelib_sap_fiori_3/designtime/api.json"
+}
+{
+  "label": "@ui5-language-assistant/language-server",
+  "level": "error",
+  "message": "Could not find UI5 lib from",
+  "time": "2022-12-02T04:17:48.449Z",
+  "url": "https://ui5.sap.com/1.71.53/test-resources/sap/ui/server/abap/designtime/api.json"
+}
+Unknown type: sap.m.IToolbarInteractiveControl [SAPUI5:1.71.53]
+sap.m.IToolbarInteractiveControl is a UnresolvedType and not an interface (class sap.m.Breadcrumbs implements it) [SAPUI5:1.71.53]
+Unknown type: sap.m.IToolbarInteractiveControl [SAPUI5:1.71.53]
+sap.m.IToolbarInteractiveControl is a UnresolvedType and not an interface (class sap.m.Button implements it) [SAPUI5:1.71.53]
+Unknown type: sap.m.IToolbarInteractiveControl [SAPUI5:1.71.53]
+sap.m.IToolbarInteractiveControl is a UnresolvedType and not an interface (class sap.m.CheckBox implements it) [SAPUI5:1.71.53]
+Unknown type: sap.m.IToolbarInteractiveControl [SAPUI5:1.71.53]
+sap.m.IToolbarInteractiveControl is a UnresolvedType and not an interface (class sap.m.ComboBox implements it) [SAPUI5:1.71.53]
+Unknown type: sap.m.IToolbarInteractiveControl [SAPUI5:1.71.53]
+sap.m.IToolbarInteractiveControl is a UnresolvedType and not an interface (class sap.m.DateTimeInput implements it) [SAPUI5:1.71.53]
+Unknown type: sap.m.IToolbarInteractiveControl [SAPUI5:1.71.53]
+sap.m.IToolbarInteractiveControl is a UnresolvedType and not an interface (class sap.m.GenericTag implements it) [SAPUI5:1.71.53]
+Unknown type: sap.m.IToolbarInteractiveControl [SAPUI5:1.71.53]
+sap.m.IToolbarInteractiveControl is a UnresolvedType and not an interface (class sap.m.Input implements it) [SAPUI5:1.71.53]
+Unknown type: sap.m.IToolbarInteractiveControl [SAPUI5:1.71.53]
+sap.m.IToolbarInteractiveControl is a UnresolvedType and not an interface (class sap.m.Label implements it) [SAPUI5:1.71.53]
+Unknown type: sap.m.IToolbarInteractiveControl [SAPUI5:1.71.53]
+sap.m.IToolbarInteractiveControl is a UnresolvedType and not an interface (class sap.m.Link implements it) [SAPUI5:1.71.53]
+Unknown type: sap.m.IToolbarInteractiveControl [SAPUI5:1.71.53]
+sap.m.IToolbarInteractiveControl is a UnresolvedType and not an interface (class sap.m.MenuButton implements it) [SAPUI5:1.71.53]
+Unknown type: sap.m.IToolbarInteractiveControl [SAPUI5:1.71.53]
+sap.m.IToolbarInteractiveControl is a UnresolvedType and not an interface (class sap.m.OverflowToolbarButton implements it) [SAPUI5:1.71.53]
+Unknown type: sap.m.IToolbarInteractiveControl [SAPUI5:1.71.53]
+sap.m.IToolbarInteractiveControl is a UnresolvedType and not an interface (class sap.m.RadioButton implements it) [SAPUI5:1.71.53]
+Unknown type: sap.m.IToolbarInteractiveControl [SAPUI5:1.71.53]
+sap.m.IToolbarInteractiveControl is a UnresolvedType and not an interface (class sap.m.SearchField implements it) [SAPUI5:1.71.53]
+Unknown type: sap.m.IToolbarInteractiveControl [SAPUI5:1.71.53]
+sap.m.IToolbarInteractiveControl is a UnresolvedType and not an interface (class sap.m.SegmentedButton implements it) [SAPUI5:1.71.53]
+Unknown type: sap.m.IToolbarInteractiveControl [SAPUI5:1.71.53]
+sap.m.IToolbarInteractiveControl is a UnresolvedType and not an interface (class sap.m.Select implements it) [SAPUI5:1.71.53]
+Unknown type: sap.m.IToolbarInteractiveControl [SAPUI5:1.71.53]
+sap.m.IToolbarInteractiveControl is a UnresolvedType and not an interface (class sap.m.SplitButton implements it) [SAPUI5:1.71.53]
+Unknown type: sap.m.IToolbarInteractiveControl [SAPUI5:1.71.53]
+sap.m.IToolbarInteractiveControl is a UnresolvedType and not an interface (class sap.m.Switch implements it) [SAPUI5:1.71.53]
+Unknown type: sap.m.IToolbarInteractiveControl [SAPUI5:1.71.53]
+sap.m.IToolbarInteractiveControl is a UnresolvedType and not an interface (class sap.m.Text implements it) [SAPUI5:1.71.53]
+Unknown type: sap.m.IToolbarInteractiveControl [SAPUI5:1.71.53]
+sap.m.IToolbarInteractiveControl is a UnresolvedType and not an interface (class sap.m.Title implements it) [SAPUI5:1.71.53]
+Unknown type: sap.m.IToolbarInteractiveControl [SAPUI5:1.71.53]
+sap.m.IToolbarInteractiveControl is a UnresolvedType and not an interface (class sap.m.ToggleButton implements it) [SAPUI5:1.71.53]
+{
+  "error": 204,
+  "label": "@ui5-language-assistant/language-server",
+  "level": "error",
+  "message": "Failure during SWA tracking",
+  "time": "2022-12-02T04:17:53.348Z"
+}
+{
+  "error": 204,
+  "label": "@ui5-language-assistant/language-server",
+  "level": "error",
+  "message": "Failure during SWA tracking",
+  "time": "2022-12-02T04:18:06.803Z"
+}
+{
+  "error": 204,
+  "label": "@ui5-language-assistant/language-server",
+  "level": "error",
+  "message": "Failure during SWA tracking",
+  "time": "2022-12-02T04:19:10.413Z"
+}
+{
+  "error": 204,
+  "label": "@ui5-language-assistant/language-server",
+  "level": "error",
+  "message": "Failure during SWA tracking",
+  "time": "2022-12-02T04:19:59.778Z"
+}
